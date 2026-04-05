@@ -18,9 +18,9 @@ export default function HeroSection() {
             <Image
               src="/Tipo-website/images/tipo-bottle.jpeg"
               alt="TI:PO Po:ro Apong rice wine bottle"
-              width={1600}
-              height={3600}
-              className="object-contain max-h-[173vh]"
+              width={1200}
+              height={2700}
+              className="object-contain max-h-[130vh]"
               priority
             />
           </div>
