@@ -20,7 +20,7 @@ export default function HeroSection() {
               alt="TI:PO Po:ro Apong rice wine bottle"
               width={1600}
               height={3600}
-              className="object-contain max-h-[195vh]"
+              className="object-contain max-h-[173vh]"
               priority
             />
           </div>
