@@ -7,14 +7,23 @@ export default function HeroSection() {
       <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
         <div className="relative z-10 flex flex-col items-center">
-          <Image
-            src="/Tipo-website/images/tipo-bottle.jpeg"
-            alt="TI:PO Po:ro Apong rice wine bottle"
-            width={800}
-            height={1800}
-            className="object-contain max-h-[85vh]"
-            priority
-          />
+          <div
+            style={{
+              maskImage:
+                "radial-gradient(ellipse 70% 80% at 50% 45%, black 40%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 70% 80% at 50% 45%, black 40%, transparent 100%)",
+            }}
+          >
+            <Image
+              src="/Tipo-website/images/tipo-bottle.jpeg"
+              alt="TI:PO Po:ro Apong rice wine bottle"
+              width={800}
+              height={1800}
+              className="object-contain max-h-[85vh]"
+              priority
+            />
+          </div>
           <a
             href="#the-craft"
             className="absolute right-[-100px] top-1/2 -translate-y-1/2 text-[10px] uppercase tracking-[0.25em] text-brand-text whitespace-nowrap hover:text-brand-gold transition-colors duration-300 cursor-pointer"
