@@ -8,7 +8,7 @@ export default function HeroSection() {
         {/* Bottle + Discover — seamless black-on-black blend */}
         <div className="relative z-10 flex items-center gap-8">
           <Image
-            src="/images/tipo-bottle.jpeg"
+            src="/Tipo-website/images/tipo-bottle.jpeg"
             alt="TI:PO Po:ro Apong rice wine bottle"
             width={800}
             height={1800}
@@ -29,7 +29,7 @@ export default function HeroSection() {
         {/* River background image — extends behind everything */}
         <div className="absolute inset-0">
           <Image
-            src="/images/river.jpg"
+            src="/Tipo-website/images/river.jpg"
             alt="Brahmaputra Valley river landscape"
             fill
             className="object-cover"

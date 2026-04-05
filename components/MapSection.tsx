@@ -32,7 +32,7 @@ export default function MapSection() {
         {/* Map + Bottle */}
         <div className="relative mb-16">
           <Image
-            src="/images/map.webp"
+            src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={800}
             height={400}
@@ -42,7 +42,7 @@ export default function MapSection() {
           {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
           <div className="hidden md:block absolute -bottom-20" style={{ right: "-226px" }}>
             <Image
-              src="/images/bottle.jpeg"
+              src="/Tipo-website/images/bottle.jpeg"
               alt="TI:PO bottle angled presentation"
               width={500}
               height={1200}

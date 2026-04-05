@@ -7,7 +7,7 @@ export default function CommunitySection() {
         {/* Left — Image */}
         <div>
           <Image
-            src="/images/brewmaster.webp"
+            src="/Tipo-website/images/brewmaster.webp"
             alt="Women of the Self Help Groups in traditional dresses"
             width={580}
             height={500}

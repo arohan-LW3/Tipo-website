@@ -9,7 +9,7 @@ export default function StoryIntro() {
           {/* Left — Image */}
           <div className="relative">
             <Image
-              src="/images/brewmaster.webp"
+              src="/Tipo-website/images/brewmaster.webp"
               alt="Women herb collectors gathering botanicals in the Himalayan foothills"
               width={580}
               height={480}
