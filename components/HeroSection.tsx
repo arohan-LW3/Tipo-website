@@ -10,17 +10,17 @@ export default function HeroSection() {
           <div
             style={{
               maskImage:
-                "radial-gradient(ellipse 70% 80% at 50% 45%, black 40%, transparent 100%)",
+                "radial-gradient(ellipse 65% 75% at 50% 45%, black 40%, transparent 100%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 70% 80% at 50% 45%, black 40%, transparent 100%)",
+                "radial-gradient(ellipse 65% 75% at 50% 45%, black 40%, transparent 100%)",
             }}
           >
             <Image
               src="/Tipo-website/images/tipo-bottle.jpeg"
               alt="TI:PO Po:ro Apong rice wine bottle"
-              width={800}
-              height={1800}
-              className="object-contain max-h-[85vh]"
+              width={1200}
+              height={2700}
+              className="object-contain max-h-[130vh]"
               priority
             />
           </div>
