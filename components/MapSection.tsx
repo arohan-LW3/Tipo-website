@@ -30,13 +30,13 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle */}
-        <div className="relative mb-16">
+        <div className="relative mb-16" style={{ marginTop: "-50px" }}>
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
-            className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10 -mt-[50px]"
+            className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10"
           />
 
           {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
