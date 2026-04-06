@@ -17,7 +17,7 @@ export default function MapSection() {
         </div>
 
         {/* Culture quote */}
-        <div className="max-w-3xl mx-auto text-center mb-8">
+        <div className="max-w-3xl mx-auto text-center mb-0">
           <p className="font-serif text-brand-gold/80 text-lg md:text-xl italic leading-relaxed">
             Every culture has a fermentation that is unique to them
           </p>
