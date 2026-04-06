@@ -36,7 +36,7 @@ export default function MapSection() {
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
-            className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10 -mt-5"
+            className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10 -mt-[50px]"
           />
 
           {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
