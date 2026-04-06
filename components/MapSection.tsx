@@ -40,7 +40,18 @@ export default function MapSection() {
           />
 
           {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
-          <div className="hidden md:block absolute" style={{ right: "-266px", bottom: "-280px", transform: "rotate(5deg)" }}>
+          <div
+            className="hidden md:block absolute"
+            style={{
+              right: "-266px",
+              bottom: "-280px",
+              transform: "rotate(5deg)",
+              maskImage:
+                "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
+            }}
+          >
             <Image
               src="/Tipo-website/images/bottle.jpeg"
               alt="TI:PO bottle angled presentation"
