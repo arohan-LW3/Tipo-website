@@ -6,12 +6,14 @@ export default function CellarSection() {
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Sub-headings above */}
         <div className="mb-10">
-          <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-1">
-            Technology is the valet,
-          </span>
-          <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold mb-2">
-            not the star.
-          </h2>
+          <div className="flex flex-col gap-2">
+            <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+              Technology is the valet,
+            </span>
+            <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+              not the star.
+            </h2>
+          </div>
         </div>
 
         {/* Two-column: wider image left, text right */}

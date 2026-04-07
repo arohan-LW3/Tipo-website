@@ -3,6 +3,7 @@ import Image from "next/image";
 interface ProcessRow {
   label: string;
   heading: string;
+  highlight?: string;
   body: string;
   body2?: string;
   image: string;
@@ -49,7 +50,8 @@ const rows: ProcessRow[] = [
   {
     label: "A RARE SOLID-STATE",
     heading: "Fermentation",
-    body: "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
+    highlight: "Po:ro Apong ferments in solid state, not liquid.",
+    body: "Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
     body2: "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
     image: "/Tipo-website/images/solid-state.webp",
     imageAlt: "Folk art figure with floral motifs representing solid-state fermentation",
@@ -96,6 +98,11 @@ export default function ProcessSection() {
                 </h2>
               </div>
               <div className="gold-divider mt-1 mb-1" />
+              {row.highlight && (
+                <p className="text-[14px] leading-[1.85] text-brand-gold font-serif italic">
+                  {row.highlight}
+                </p>
+              )}
               <p className="text-[12px] leading-[1.85] text-brand-text">
                 {row.body}
               </p>

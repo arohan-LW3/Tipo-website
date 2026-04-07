@@ -8,11 +8,14 @@ export default function HeritageSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
           {/* Left — Text */}
           <div className="flex flex-col gap-4">
-            <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold mb-2">
-              It takes a village,
-              <br />
-              they say!
-            </h2>
+            <div className="flex flex-col gap-2">
+              <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
+                It takes a village,
+              </span>
+              <h2 className="font-serif text-xl md:text-2xl leading-snug text-brand-gold">
+                they say!
+              </h2>
+            </div>
             <div className="gold-divider mt-1 mb-1" />
             <p className="text-[12px] leading-[1.85] text-brand-text">
               Po:ro Apong is made by women, and it has always been so. Knowledge
