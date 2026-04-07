@@ -62,26 +62,8 @@ export default function MapSection() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="flex justify-center mb-20" style={{ marginTop: "calc(4rem + 40px)" }}>
-          <Image
-            src="/Tipo-website/images/divider.webp"
-            alt="Decorative divider"
-            width={800}
-            height={100}
-            className="w-full max-w-3xl h-auto object-contain"
-            style={{
-              maskImage:
-                "radial-gradient(ellipse 90% 70% at 50% 50%, black 40%, transparent 100%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 90% 70% at 50% 50%, black 40%, transparent 100%)",
-              filter: "brightness(0.85)",
-            }}
-          />
-        </div>
-
         {/* Contact & Distribution */}
-        <div className="text-center mt-10">
+        <div className="text-center mt-20">
           <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
             Contact &amp; Distribution
           </span>
