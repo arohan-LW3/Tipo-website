@@ -62,8 +62,19 @@ export default function MapSection() {
           </div>
         </div>
 
+        {/* Divider */}
+        <div className="flex justify-center mt-16 mb-16">
+          <Image
+            src="/Tipo-website/images/divider.webp"
+            alt="Decorative divider"
+            width={800}
+            height={100}
+            className="w-full max-w-3xl h-auto object-contain"
+          />
+        </div>
+
         {/* Contact & Distribution */}
-        <div className="text-center mt-20">
+        <div className="text-center mt-8">
           <span className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium block mb-4">
             Contact &amp; Distribution
           </span>
