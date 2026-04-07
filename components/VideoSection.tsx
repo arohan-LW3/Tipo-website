@@ -8,7 +8,7 @@ export default function VideoSection() {
         </span>
 
         {/* YouTube Video */}
-        <div className="w-full max-w-4xl bg-[#3a3a3a] rounded-sm p-6 md:p-10">
+        <div className="w-full max-w-4xl">
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
               src="https://www.youtube.com/embed/QipHkYuCm74"
