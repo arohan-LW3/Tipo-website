@@ -39,7 +39,7 @@ export default function MapSection() {
             className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10"
           />
 
-          {/* Bottle overlay — flush to right edge, boundary touches viewport edge */}
+          {/* Bottle overlay — desktop: flush to right edge */}
           <div
             className="hidden md:block absolute"
             style={{
@@ -57,6 +57,25 @@ export default function MapSection() {
               alt="TI:PO bottle angled presentation"
               width={750}
               height={1800}
+              className="object-contain"
+            />
+          </div>
+
+          {/* Bottle overlay — mobile: centered, smaller */}
+          <div
+            className="md:hidden flex justify-center mt-4"
+            style={{
+              maskImage:
+                "radial-gradient(ellipse 75% 80% at 50% 50%, black 45%, transparent 100%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 75% 80% at 50% 50%, black 45%, transparent 100%)",
+            }}
+          >
+            <Image
+              src="/Tipo-website/images/bottle.jpeg"
+              alt="TI:PO bottle angled presentation"
+              width={300}
+              height={720}
               className="object-contain"
             />
           </div>
