@@ -19,7 +19,7 @@ export default function CellarSection() {
           {/* Left — wider image (3 cols) */}
           <div className="md:col-span-3">
             <Image
-              src="https://placehold.co/720x500/1a1a1a/c9a84c?text=Winery"
+              src="/Tipo-website/images/winery.webp"
               alt="Traditional winery with worker overseeing the process"
               width={720}
               height={500}

@@ -38,7 +38,7 @@ export default function HeroSection() {
         {/* River background image — extends behind everything */}
         <div className="absolute inset-0">
           <Image
-            src="/Tipo-website/images/river.jpg"
+            src="/Tipo-website/images/himalaya.webp"
             alt="Brahmaputra Valley river landscape"
             fill
             className="object-cover"

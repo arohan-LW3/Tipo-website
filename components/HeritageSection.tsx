@@ -35,7 +35,7 @@ export default function HeritageSection() {
           {/* Right — Image */}
           <div>
             <Image
-              src="/Tipo-website/images/brewmaster.webp"
+              src="/Tipo-website/images/it-takes-a-village.webp"
               alt="Women brewmasters of the village in traditional attire"
               width={560}
               height={480}
