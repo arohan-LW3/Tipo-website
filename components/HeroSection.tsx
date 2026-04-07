@@ -33,46 +33,21 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* River background section — text lives inside the curve reveal */}
+      {/* Himalaya background with built-in shape divider cutout */}
       <div className="w-full relative">
-        {/* River background image — extends behind everything */}
+        {/* Himalaya new image — black cutout at top blends seamlessly with hero */}
         <div className="absolute inset-0">
           <Image
-            src="/Tipo-website/images/himalaya.webp"
-            alt="Brahmaputra Valley river landscape"
+            src="/Tipo-website/images/himalaya-new.webp"
+            alt="Eastern Himalayas with shape divider cutout"
             fill
-            className="object-cover"
+            className="object-cover object-top"
           />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
-        {/* Shape divider overlaying the TOP of river — black fill ABOVE the curve */}
-        <div className="relative z-20 w-full pointer-events-none">
-          <svg
-            viewBox="0 0 1440 220"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-full block"
-            style={{ height: "220px" }}
-            preserveAspectRatio="none"
-          >
-            {/* Fill ABOVE the curve with black — seamless transition from hero */}
-            <path
-              d="M0,0 L1440,0 L1440,15 C1380,8 1300,18 1220,12 C1140,6 1080,28 1020,35 C960,42 900,30 840,25 C780,20 720,30 660,50 C600,70 540,100 480,130 C420,158 360,178 300,180 C240,182 180,155 120,120 C60,85 30,55 0,40 Z"
-              fill="#000000"
-            />
-            {/* Subtle gold stroke on the curve edge */}
-            <path
-              d="M0,40 C30,55 60,85 120,120 C180,155 240,182 300,180 C360,178 420,158 480,130 C540,100 600,70 660,50 C720,30 780,20 840,25 C900,30 960,42 1020,35 C1080,28 1140,6 1220,12 C1300,18 1380,8 1440,15"
-              fill="none"
-              stroke="rgba(201,168,76,0.12)"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
-
-        {/* Text content — positioned below the curve, over the river */}
-        <div className="relative z-10 pb-16 md:pb-20 -mt-4">
+        {/* Text content — positioned over the himalaya image */}
+        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-16 md:pb-20">
           <div className="max-w-4xl mx-auto px-10 md:px-16 lg:px-20 text-center">
             {/* Subtitle */}
             <p className="font-serif text-brand-offwhite/70 text-sm md:text-base italic mb-2">
