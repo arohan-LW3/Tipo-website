@@ -47,7 +47,7 @@ export default function HeroSection() {
         </div>
 
         {/* Text content — positioned over the himalaya image */}
-        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-16 md:pb-20">
+        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
           <div className="max-w-4xl mx-auto px-10 md:px-16 lg:px-20 text-center">
             {/* Subtitle */}
             <p className="font-serif text-brand-offwhite/70 text-sm md:text-base italic mb-2">
