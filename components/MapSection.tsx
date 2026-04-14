@@ -63,12 +63,13 @@ export default function MapSection() {
 
           {/* Bottle overlay — mobile: pushed to right edge */}
           <div
-            className="md:hidden flex justify-end mt-4 -mr-10"
+            className="md:hidden flex justify-end mt-4"
             style={{
+              marginRight: "-70px",
               maskImage:
-                "radial-gradient(ellipse 75% 80% at 60% 50%, black 45%, transparent 100%)",
+                "radial-gradient(ellipse 60% 70% at 65% 55%, black 35%, transparent 100%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 75% 80% at 60% 50%, black 45%, transparent 100%)",
+                "radial-gradient(ellipse 60% 70% at 65% 55%, black 35%, transparent 100%)",
             }}
           >
             <Image
