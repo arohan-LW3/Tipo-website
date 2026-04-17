@@ -11,8 +11,6 @@
 
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
-  --font-cinzel: var(--font-cinzel), "Cinzel", serif;
-  --font-montserrat: var(--font-montserrat), "Montserrat", sans-serif;
 }
 
 *,
