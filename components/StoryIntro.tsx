@@ -7,7 +7,7 @@ export default function StoryIntro() {
         {/* Two-column: Image + Text */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
           {/* Left — Image */}
-          <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden">
+          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
             <Image
               src="/Tipo-website/images/herb-collector.webp"
               alt="Women herb collectors gathering botanicals in the Himalayan foothills"
