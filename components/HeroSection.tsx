@@ -45,6 +45,13 @@ export default function HeroSection() {
             fill
             className="object-cover object-top"
           />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent 0%, transparent 22%, rgba(0,0,0,0.55) 42%, rgba(0,0,0,0.65) 100%)",
+            }}
+          />
         </div>
 
         {/* Text content — positioned over the himalaya image */}
