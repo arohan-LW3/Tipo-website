@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="relative z-10 flex flex-col items-center translate-y-[40px]">
           <div
             style={{
-              transform: "scale(1.5)",
+              transform: "translateX(20px) scale(1.5)",
               transformOrigin: "top center",
               maskImage:
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
@@ -28,7 +28,7 @@ export default function HeroSection() {
           </div>
           <a
             href="#the-craft"
-            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow text-[7px] left-[160px] -translate-y-[calc(50%-120px)] md:text-[14px] md:left-[60px] md:-translate-y-[calc(50%-360px)]"
+            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow text-[7px] left-[180px] -translate-y-[calc(50%-120px)] md:text-[14px] md:left-[80px] md:-translate-y-[calc(50%-360px)]"
           >
             Discover &gt;&gt;
           </a>
