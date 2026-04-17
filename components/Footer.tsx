@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const exploreLinks = [
     { label: "The Origin", href: "#" },
@@ -28,6 +30,13 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
           {/* Brand block */}
           <div>
+            <Image
+              src="/Tipo-website/images/tipo-logo.webp"
+              alt="TI:PO logo"
+              width={80}
+              height={28}
+              className="h-auto w-[70px] mb-4"
+            />
             <p className="font-serif text-brand-gold text-sm mb-3">
               Po:Ro Apong
             </p>
@@ -100,13 +109,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="w-full h-px bg-brand-gold/20 mb-6" />
-
-        {/* Copyright */}
-        <p className="text-[10px] tracking-wider text-brand-text/40 text-center">
-          &copy; {new Date().getFullYear()} TI:PO. All rights reserved.
-        </p>
       </div>
     </footer>
   );
