@@ -12,9 +12,9 @@ export default function HeroSection() {
               transform: "scale(1.5)",
               transformOrigin: "top center",
               maskImage:
-                "radial-gradient(ellipse 55% 80% at 50% 45%, black 25%, transparent 80%)",
+                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 55% 80% at 50% 45%, black 25%, transparent 80%)",
+                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
             }}
           >
             <Image
