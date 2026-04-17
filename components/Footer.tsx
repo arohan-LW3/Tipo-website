@@ -24,9 +24,9 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-        {/* Brand block + 3 nav columns */}
-        <div className="flex flex-col md:flex-row md:justify-between gap-10 mb-14">
-          {/* Brand block — left */}
+        {/* 4-column layout: equal gaps, full width matching divider */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
+          {/* Brand block */}
           <div>
             <p className="font-serif text-brand-gold text-sm mb-3">
               Po:Ro Apong
@@ -42,64 +42,61 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* 3 nav columns — right-aligned with equal gaps */}
-          <div className="flex gap-12 md:gap-16 justify-start md:justify-end">
-            {/* Explore */}
-            <div>
-              <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-                Explore
-              </h4>
-              <ul className="flex flex-col gap-2">
-                {exploreLinks.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Explore */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
+              Explore
+            </h4>
+            <ul className="flex flex-col gap-2">
+              {exploreLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Experience */}
-            <div>
-              <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-                Experience
-              </h4>
-              <ul className="flex flex-col gap-2">
-                {experienceLinks.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Experience */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
+              Experience
+            </h4>
+            <ul className="flex flex-col gap-2">
+              {experienceLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Connect */}
-            <div>
-              <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-                Connect
-              </h4>
-              <ul className="flex flex-col gap-2">
-                {connectLinks.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {/* Connect */}
+          <div>
+            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
+              Connect
+            </h4>
+            <ul className="flex flex-col gap-2">
+              {connectLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
