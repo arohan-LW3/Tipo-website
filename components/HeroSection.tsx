@@ -9,10 +9,12 @@ export default function HeroSection() {
         <div className="relative z-10 flex flex-col items-center translate-y-[40px]">
           <div
             style={{
+              transform: "translateY(120px) scale(1.5)",
+              transformOrigin: "top center",
               maskImage:
-                "radial-gradient(ellipse 70% 95% at 50% 48%, black 55%, transparent 100%)",
+                "radial-gradient(ellipse 70% 95% at 50% 45%, black 50%, transparent 95%)",
               WebkitMaskImage:
-                "radial-gradient(ellipse 70% 95% at 50% 48%, black 55%, transparent 100%)",
+                "radial-gradient(ellipse 70% 95% at 50% 45%, black 50%, transparent 95%)",
             }}
           >
             <Image
