@@ -47,7 +47,10 @@ export default function Footer() {
               Traditional Indian Rice Wine
             </p>
             <p className="text-[11px] text-brand-text leading-relaxed mt-2">
-              From the Brahmaputra Valley, Assam, India
+              From the Brahmaputra Valley,
+            </p>
+            <p className="text-[11px] text-brand-text leading-relaxed">
+              Assam, India
             </p>
           </div>
 
