@@ -83,7 +83,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="mt-[400px] md:mt-[400px]">
+        <div className="mt-[200px] md:mt-[200px]">
           <Image
             src="/Tipo-website/images/motif-new.webp"
             alt="Decorative motif"
