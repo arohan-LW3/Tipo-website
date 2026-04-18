@@ -17,7 +17,7 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[60px]">
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[70px]">
             <h2
               className="text-xl md:text-2xl leading-snug"
               style={{
