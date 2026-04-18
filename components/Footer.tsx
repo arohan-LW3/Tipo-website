@@ -37,14 +37,14 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="py-[60px] px-[40px]"
+      className="py-[60px] px-[80px]"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
       {/* 4 columns, evenly spaced horizontally */}
-      <div className="flex flex-wrap justify-between gap-x-10 gap-y-10 items-start max-w-6xl mx-auto">
+      <div className="flex flex-wrap justify-between gap-y-10 items-start max-w-6xl mx-auto">
         {/* Column 1 — Brand */}
         <div className="flex flex-col">
           <p
