@@ -5,7 +5,7 @@ export default function MapSection() {
     <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Welcome heading + culture quote */}
-        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20">
+        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20 -translate-y-[45px]">
           <h2
             className="text-xl md:text-2xl leading-snug"
             style={{
@@ -74,7 +74,7 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative mb-16 mt-6 md:-mt-[110px]">
+        <div className="relative mb-16 mt-6 md:-mt-[155px] -translate-y-[45px] md:translate-y-0">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
