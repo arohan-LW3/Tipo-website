@@ -85,7 +85,9 @@ export default function Footer() {
               fontWeight: 300,
             }}
           >
-            From the Brahmaputra Valley, Assam, India
+            From the Brahmaputra Valley,
+            <br />
+            Assam, India
           </p>
         </div>
 
