@@ -90,7 +90,6 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldLabel: true,
     largeText: true,
-    headingColor: "#FFFFFF",
   },
   {
     label: "",
