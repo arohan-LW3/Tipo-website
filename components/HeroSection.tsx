@@ -88,7 +88,7 @@ export default function HeroSection() {
             {/* Main heading — emphasized phrase: MAINLUX Bold */}
             <h1
               className="text-brand-gold text-[22px] md:text-[24px] uppercase leading-[1.15] mb-6"
-              style={{ fontWeight: 700, letterSpacing: "0.02em" }}
+              style={{ fontWeight: 900, letterSpacing: "0.02em" }}
             >
               Eastern Himalayas
             </h1>
