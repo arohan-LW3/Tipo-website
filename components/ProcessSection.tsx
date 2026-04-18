@@ -106,9 +106,13 @@ export default function ProcessSection() {
                 }}
               >
                 {row.label && (
-                  <span style={{ fontWeight: 300 }}>{row.label} </span>
+                  <span style={{ fontWeight: 300, letterSpacing: "0.08em" }}>
+                    {row.label}{" "}
+                  </span>
                 )}
-                <span style={{ fontWeight: 700 }}>{row.heading}</span>
+                <span style={{ fontWeight: 700, letterSpacing: "0.18em" }}>
+                  {row.heading}
+                </span>
               </h2>
               {row.highlight && (
                 <p
