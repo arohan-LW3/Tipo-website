@@ -17,7 +17,7 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20">
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[60px]">
             <h2
               className="text-xl md:text-2xl leading-snug"
               style={{
@@ -39,7 +39,6 @@ export default function CellarSection() {
                   display: "block",
                   fontWeight: 300,
                   letterSpacing: "0.08em",
-                  color: "#FFFFFF",
                 }}
               >
                 not the star.
@@ -53,7 +52,9 @@ export default function CellarSection() {
                 fontWeight: 300,
               }}
             >
-              Tipo did not reinterpret Po:ro Apong.
+              Tipo did not reinterpret
+              <br />
+              Po:ro Apong.
             </p>
             <div
               className="flex flex-col gap-4"
