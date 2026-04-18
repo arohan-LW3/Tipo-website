@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Explore */}
-          <div className="w-[130px]">
+          <div className="w-[130px] md:ml-10">
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
               Explore
             </h4>
