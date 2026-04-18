@@ -24,7 +24,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
+    <footer
+      id="contact"
+      className="pt-16 pb-10 md:pt-20 md:pb-12"
+      style={{
+        background:
+          "linear-gradient(180deg, #000000 0px, #000000 40px, #1a1a1a 120px, #2a2a2a 55%, #1c1c1c 100%)",
+      }}
+    >
       <div className="w-full px-6 md:pl-[100px] md:pr-10">
         {/* 4-column layout: fixed widths, centered as a group with equal side margins */}
         <div className="flex flex-wrap justify-center gap-x-20 md:gap-x-24 gap-y-10 mb-14 items-start">
