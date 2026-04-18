@@ -60,18 +60,11 @@ export default function HeroSection() {
         </div>
 
         {/* Text content — positioned over the himalaya image.
-            Outer flex centers an inner box whose width mirrors the
-            bottle wrapper above (max-h:96vh * natural aspect 900/2025).
-            Inside, we use the SAME left offsets as the Discover button
-            (180px mobile / 80px desktop) so text and Discover share the
-            exact same vertical axis. */}
-        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52 flex flex-col items-center">
+            pl values match Discover's left offsets so text shares the
+            same vertical axis (x=180 mobile, x=80 desktop). */}
+        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
           <div
-            className="relative"
-            style={{ width: "calc(96vh * 900 / 2025)", maxWidth: "100vw" }}
-          >
-          <div
-            className="max-w-[260px] md:max-w-[420px] ml-[180px] md:ml-[80px] text-left"
+            className="pl-[180px] md:pl-[80px] pr-6 md:pr-10 max-w-[440px] md:max-w-[500px] text-left"
             style={{
               fontFamily: '"Mainlux", "Inter", sans-serif',
             }}
@@ -125,7 +118,6 @@ export default function HeroSection() {
                 humidity&mdash;creating one of India&apos;s richest biodiversities.
               </p>
             </div>
-          </div>
           </div>
         </div>
       </div>
