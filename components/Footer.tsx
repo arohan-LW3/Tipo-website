@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Footer() {
   const exploreLinks = [
     { label: "The Origin", href: "#" },
@@ -10,7 +8,7 @@ export default function Footer() {
   ];
 
   const experienceLinks = [
-    { label: "Visit TÍ:PO", href: "#" },
+    { label: "Visit TI:PO", href: "#" },
     { label: "For Restaurants", href: "#" },
     { label: "Shop", href: "#" },
     { label: "Stockist Finder", href: "#" },
@@ -23,100 +21,142 @@ export default function Footer() {
     { label: "Press Kit", href: "#" },
   ];
 
+  const headerStyle = {
+    color: "#D4922A",
+    fontFamily: '"Mainlux", "Inter", sans-serif',
+    fontWeight: 700,
+    letterSpacing: "2px",
+  } as const;
+
+  const linkStyle = {
+    color: "#C8C8C8",
+    fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+    fontWeight: 300,
+  } as const;
+
   return (
     <footer
       id="contact"
-      className="pt-16 pb-10 md:pt-20 md:pb-12"
+      className="py-[60px] px-[40px]"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
-      <div className="w-full px-6 md:pl-[100px] md:pr-10">
-        {/* 4-column layout: fixed widths, centered as a group with equal side margins */}
-        <div className="flex flex-wrap justify-center gap-x-20 md:gap-x-24 gap-y-10 mb-14 items-start">
-          {/* Brand block */}
-          <div className="w-[170px]">
-            <Image
-              src="/Tipo-website/images/footer-logo.webp"
-              alt="TI:PO — Po:ro Apong"
-              width={560}
-              height={260}
-              className="h-auto w-[140px] mt-0 mb-4 block"
-              priority
-            />
-            <p className="text-[11px] text-brand-text leading-relaxed">
-              Handcrafted by Women
-            </p>
-            <p className="text-[11px] text-brand-text leading-relaxed">
-              Traditional Indian Rice Wine
-            </p>
-            <p className="text-[11px] text-brand-text leading-relaxed mt-2">
-              From the Brahmaputra Valley,
-            </p>
-            <p className="text-[11px] text-brand-text leading-relaxed">
-              Assam, India
-            </p>
-          </div>
-
-          {/* Explore */}
-          <div className="w-[130px] md:ml-10">
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-              Explore
-            </h4>
-            <ul className="flex flex-col gap-2">
-              {exploreLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Experience */}
-          <div className="w-[130px]">
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-              Experience
-            </h4>
-            <ul className="flex flex-col gap-2">
-              {experienceLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Connect */}
-          <div className="w-[130px]">
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
-              Connect
-            </h4>
-            <ul className="flex flex-col gap-2">
-              {connectLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-[11px] text-brand-text hover:text-brand-offwhite transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+      {/* 4 columns, evenly spaced horizontally */}
+      <div className="flex flex-wrap justify-between gap-x-10 gap-y-10 items-start max-w-6xl mx-auto">
+        {/* Column 1 — Brand */}
+        <div className="flex flex-col">
+          <p
+            className="text-[14px] leading-[1.5] mb-3"
+            style={{
+              color: "#C8C8C8",
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            Po:Ro Apong
+          </p>
+          <p
+            className="text-[12px] leading-[1.6]"
+            style={{
+              color: "#888888",
+              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            Handcrafted by Women
+          </p>
+          <p
+            className="text-[12px] leading-[1.6]"
+            style={{
+              color: "#888888",
+              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            Traditional Indian Rice Wine
+          </p>
+          <p
+            className="text-[12px] leading-[1.6]"
+            style={{
+              color: "#888888",
+              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
+              fontWeight: 300,
+            }}
+          >
+            From the Brahmaputra Valley, Assam, India
+          </p>
         </div>
 
+        {/* Column 2 — Explore */}
+        <div className="flex flex-col">
+          <h4
+            className="text-[12px] uppercase mb-3"
+            style={headerStyle}
+          >
+            Explore
+          </h4>
+          <ul className="flex flex-col">
+            {exploreLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  style={{ ...linkStyle, lineHeight: 2 }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Column 3 — Experience */}
+        <div className="flex flex-col">
+          <h4
+            className="text-[12px] uppercase mb-3"
+            style={headerStyle}
+          >
+            Experience
+          </h4>
+          <ul className="flex flex-col">
+            {experienceLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  style={{ ...linkStyle, lineHeight: 2 }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Column 4 — Connect */}
+        <div className="flex flex-col">
+          <h4
+            className="text-[12px] uppercase mb-3"
+            style={headerStyle}
+          >
+            Connect
+          </h4>
+          <ul className="flex flex-col">
+            {connectLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  style={{ ...linkStyle, lineHeight: 2 }}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </footer>
   );
