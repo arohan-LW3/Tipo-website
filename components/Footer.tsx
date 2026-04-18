@@ -78,7 +78,7 @@ export default function Footer() {
             Traditional Indian Rice Wine
           </p>
           <p
-            className="text-[12px] leading-[1.6]"
+            className="text-[12px] leading-[1.6] mt-5"
             style={{
               color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
