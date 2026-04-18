@@ -134,6 +134,12 @@ export default function MapSection() {
             width={600}
             height={60}
             className="mx-auto block h-6 w-auto"
+            style={{
+              maskImage:
+                "linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0%, black 18%, black 82%, transparent 100%)",
+            }}
           />
           <div className="text-center mt-[45px]">
             <h2
