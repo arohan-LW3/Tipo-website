@@ -4,22 +4,20 @@ export default function CellarSection() {
   return (
     <section className="bg-brand-black py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-        {/* Two-column: wider image left, text right */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-x-16 gap-y-12 items-start">
-          {/* Left — wider image (3 cols), 2400x1800 / 4:3 frame */}
-          <div className="md:col-span-3">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
-              <Image
-                src="/Tipo-website/images/winery.webp"
-                alt="Traditional winery with worker overseeing the process"
-                fill
-                className="object-cover"
-              />
-            </div>
+        {/* Two-column 50/50: matches StoryIntro so the image renders identically sized */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
+          {/* Left — image (2400x1800 / 4:3 frame) */}
+          <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+            <Image
+              src="/Tipo-website/images/winery.webp"
+              alt="Traditional winery with worker overseeing the process"
+              fill
+              className="object-cover"
+            />
           </div>
 
-          {/* Right — text (2 cols) */}
-          <div className="md:col-span-2 flex flex-col gap-4">
+          {/* Right — text */}
+          <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <span className="text-[20px] uppercase tracking-[0.25em] text-brand-gold font-medium">
                 Technology is the valet,
