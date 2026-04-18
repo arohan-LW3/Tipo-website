@@ -32,7 +32,7 @@ export default function HeroSection() {
             style={{
               fontFamily: '"Mainlux Light", "Mainlux", "Inter", sans-serif',
               fontWeight: 300,
-              fontSize: "5pt",
+              fontSize: "15pt",
             }}
           >
             Discover &gt;&gt;
