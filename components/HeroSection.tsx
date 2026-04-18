@@ -64,7 +64,7 @@ export default function HeroSection() {
             same vertical axis (x=180 mobile, x=80 desktop). */}
         <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
           <div
-            className="pl-[360px] md:pl-[260px] pr-6 md:pr-10 max-w-[600px] md:max-w-[660px] text-left"
+            className="pl-[440px] md:pl-[340px] pr-6 md:pr-10 max-w-[680px] md:max-w-[740px] text-left"
             style={{
               fontFamily: '"Mainlux", "Inter", sans-serif',
             }}
