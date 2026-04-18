@@ -196,10 +196,9 @@ export default function ProcessSection() {
               </div>
               {row.pullQuote && (
                 <div
-                  className="flex flex-col gap-1"
+                  className="flex flex-col gap-1 text-brand-text"
                   style={{
                     marginTop: "8px",
-                    color: "#D4922A",
                     fontFamily: '"Mainlux", "Inter", sans-serif',
                     fontWeight: 700,
                   }}
