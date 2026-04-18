@@ -20,8 +20,9 @@ export default function StoryIntro() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <span
-                className="text-[20px] uppercase tracking-[0.25em] text-brand-gold"
+                className="text-[20px] uppercase tracking-[0.25em]"
                 style={{
+                  color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',
                   fontWeight: 700,
                 }}
@@ -29,8 +30,9 @@ export default function StoryIntro() {
                 The Forest
               </span>
               <h2
-                className="text-xl md:text-2xl leading-snug text-brand-gold"
+                className="text-xl md:text-2xl leading-snug"
                 style={{
+                  color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',
                   fontWeight: 300,
                 }}
