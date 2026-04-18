@@ -71,7 +71,7 @@ export default function HeroSection() {
           >
             {/* THE CRAFT label */}
             <span
-              className="text-[10px] uppercase tracking-[0.25em] text-brand-gold"
+              className="block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-6"
               style={{ fontWeight: 300 }}
             >
               The Craft
@@ -79,7 +79,7 @@ export default function HeroSection() {
 
             {/* Subtitle — descriptive line: MAINLUX Light */}
             <p
-              className="text-brand-offwhite/80 text-sm md:text-[15px] italic mt-1 mb-0"
+              className="text-brand-offwhite text-[22px] md:text-[24px] leading-[1.15] mb-0"
               style={{ fontWeight: 300 }}
             >
               Born at the Foothills of the
@@ -87,32 +87,32 @@ export default function HeroSection() {
 
             {/* Main heading — emphasized phrase: MAINLUX Bold */}
             <h1
-              className="text-brand-gold text-2xl md:text-3xl lg:text-4xl tracking-[0.08em] uppercase leading-tight mb-3"
-              style={{ fontWeight: 700 }}
+              className="text-brand-gold text-[22px] md:text-[24px] uppercase leading-[1.15] mb-6"
+              style={{ fontWeight: 700, letterSpacing: "0.02em" }}
             >
               Eastern Himalayas
             </h1>
 
             {/* Intro paragraphs — body: Yantramanav Light */}
             <div
-              className="flex flex-col gap-2 max-w-xl"
+              className="flex flex-col gap-4 max-w-[420px]"
               style={{
                 fontFamily:
                   'var(--font-yantramanav), "Inter", sans-serif',
                 fontWeight: 300,
               }}
             >
-              <p className="text-[12px] leading-[1.7] text-brand-text">
+              <p className="text-[13px] leading-[1.55] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.
               </p>
-              <p className="text-[12px] leading-[1.7] text-brand-text">
+              <p className="text-[13px] leading-[1.55] text-brand-text">
                 From this landscape emerges a living library of
                 flavour&mdash;60+ forest botanicals, each shaped by soil,
                 climate and time. Herbs are gathered from the mountains; rice rises
                 from the river&apos;s alluvial fields.
               </p>
-              <p className="text-[12px] leading-[1.7] text-brand-text">
+              <p className="text-[13px] leading-[1.55] text-brand-text">
                 Every year the valley resets
                 itself&mdash;flood, monsoon, heat and generous
                 humidity&mdash;creating one of India&apos;s richest biodiversities.
