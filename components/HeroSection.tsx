@@ -77,10 +77,10 @@ export default function HeroSection() {
               The Craft
             </span>
 
-            {/* Subtitle — descriptive line: MAINLUX Light */}
+            {/* Subtitle — descriptive line: MAINLUX Bold, gold */}
             <p
-              className="text-brand-offwhite text-[22px] md:text-[24px] leading-[1.15] mb-0"
-              style={{ fontWeight: 300 }}
+              className="text-brand-gold text-[22px] md:text-[24px] leading-[1.15] mb-0"
+              style={{ fontWeight: 700 }}
             >
               Born at the Foothills of the
             </p>
