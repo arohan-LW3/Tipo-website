@@ -16,6 +16,8 @@ interface ProcessRow {
   boldLabel?: boolean;
   /** If true, both label and heading are Mainlux Bold. */
   boldBoth?: boolean;
+  /** Overrides the color of the heading span only (label keeps #D4922A). */
+  headingColor?: string;
   /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
   largeText?: boolean;
 }
@@ -77,12 +79,18 @@ const rows: ProcessRow[] = [
     body: [
       "Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
       "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
+      "This process resists massive scale by design.",
+      "It depends on judgment rather than automation, and on time rather than speed.",
     ],
     image: "/Tipo-website/images/solid-state.webp",
     imageAlt: "Folk art figure with floral motifs representing solid-state fermentation",
     imageW: 440,
     imageH: 440,
     reversed: true,
+    stacked: true,
+    boldLabel: true,
+    largeText: true,
+    headingColor: "#FFFFFF",
   },
   {
     label: "",
@@ -143,6 +151,7 @@ export default function ProcessSection() {
                     letterSpacing:
                       row.boldBoth ? "0.18em" : row.boldLabel ? "0.08em" : "0.18em",
                     display: row.stacked ? "block" : undefined,
+                    color: row.headingColor,
                   }}
                 >
                   {row.heading}
@@ -150,7 +159,9 @@ export default function ProcessSection() {
               </h2>
               {row.highlight && (
                 <p
-                  className="text-[14px] leading-[1.85]"
+                  className={`${
+                    row.largeText ? "text-[16px]" : "text-[14px]"
+                  } leading-[1.85]`}
                   style={{
                     color: "#D4922A",
                     fontFamily: '"Mainlux", "Inter", sans-serif',
