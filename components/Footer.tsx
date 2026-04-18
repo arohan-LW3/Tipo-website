@@ -60,7 +60,7 @@ export default function Footer() {
           <p
             className="text-[12px] leading-[1.6]"
             style={{
-              color: "#888888",
+              color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
               fontWeight: 300,
             }}
@@ -70,7 +70,7 @@ export default function Footer() {
           <p
             className="text-[12px] leading-[1.6]"
             style={{
-              color: "#888888",
+              color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
               fontWeight: 300,
             }}
@@ -80,7 +80,7 @@ export default function Footer() {
           <p
             className="text-[12px] leading-[1.6]"
             style={{
-              color: "#888888",
+              color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
               fontWeight: 300,
             }}
