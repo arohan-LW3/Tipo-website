@@ -29,7 +29,7 @@ export default function Footer() {
       className="pt-16 pb-10 md:pt-20 md:pb-12"
       style={{
         background:
-          "linear-gradient(180deg, #000000 0px, #000000 40px, #1a1a1a 120px, #2a2a2a 55%, #1c1c1c 100%)",
+          "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
       <div className="w-full px-6 md:pl-[100px] md:pr-10">
