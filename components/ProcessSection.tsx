@@ -10,6 +10,12 @@ interface ProcessRow {
   imageW: number;
   imageH: number;
   reversed: boolean;
+  /** If true, label sits on its own line above heading (two-line title). */
+  stacked?: boolean;
+  /** If true, label is Mainlux Bold and heading is Mainlux Light (inverse of default). */
+  boldLabel?: boolean;
+  /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
+  largeText?: boolean;
 }
 
 const rows: ProcessRow[] = [
@@ -40,6 +46,9 @@ const rows: ProcessRow[] = [
     imageW: 440,
     imageH: 440,
     reversed: true,
+    stacked: true,
+    boldLabel: true,
+    largeText: true,
   },
   {
     label: "Grain Boundary",
@@ -96,21 +105,41 @@ export default function ProcessSection() {
             <div
               className={`flex flex-col gap-4 ${
                 row.reversed ? "md:order-2" : "md:order-1"
-              }`}
+              } ${row.largeText ? "md:py-20 max-w-[480px]" : ""}`}
             >
               <h2
-                className="text-xl md:text-2xl leading-snug whitespace-nowrap"
+                className={`${
+                  row.largeText
+                    ? "text-[28px] leading-[1.2]"
+                    : "text-xl md:text-2xl leading-snug"
+                } ${row.stacked ? "" : "whitespace-nowrap"} ${
+                  row.largeText ? "mb-7" : ""
+                }`}
                 style={{
                   color: "#D4922A",
                   fontFamily: '"Mainlux", "Inter", sans-serif',
                 }}
               >
                 {row.label && (
-                  <span style={{ fontWeight: 300, letterSpacing: "0.08em" }}>
-                    {row.label}{" "}
+                  <span
+                    style={{
+                      fontWeight: row.boldLabel ? 700 : 300,
+                      letterSpacing: row.boldLabel ? "0.18em" : "0.08em",
+                      textTransform: row.boldLabel ? "uppercase" : undefined,
+                      display: row.stacked ? "block" : undefined,
+                    }}
+                  >
+                    {row.label}
+                    {row.stacked ? "" : " "}
                   </span>
                 )}
-                <span style={{ fontWeight: 700, letterSpacing: "0.18em" }}>
+                <span
+                  style={{
+                    fontWeight: row.boldLabel ? 300 : 700,
+                    letterSpacing: row.boldLabel ? "0.08em" : "0.18em",
+                    display: row.stacked ? "block" : undefined,
+                  }}
+                >
                   {row.heading}
                 </span>
               </h2>
@@ -136,7 +165,12 @@ export default function ProcessSection() {
                 {row.body.map((para, j) => (
                   <p
                     key={j}
-                    className="text-[12px] leading-[1.85] text-brand-text"
+                    className={
+                      row.largeText
+                        ? "text-[14px] leading-[1.8]"
+                        : "text-[12px] leading-[1.85] text-brand-text"
+                    }
+                    style={row.largeText ? { color: "#C8C8C8" } : undefined}
                   >
                     {para}
                   </p>
