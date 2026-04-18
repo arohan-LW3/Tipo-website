@@ -42,8 +42,10 @@ export default function HeroSection() {
 
       {/* Himalaya background with built-in shape divider cutout */}
       <div className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
-        {/* Himalaya new image — black cutout at top blends seamlessly with hero */}
-        <div className="absolute inset-0">
+        {/* Himalaya new image — black cutout at top blends seamlessly with hero.
+            Height capped at 90% of the wrapper so the image is vertically
+            cropped from the bottom (top anchor preserved for bottle blend). */}
+        <div className="absolute top-0 inset-x-0 h-[90%]">
           <Image
             src="/Tipo-website/images/himalaya-new.webp"
             alt="Eastern Himalayas with shape divider cutout"
