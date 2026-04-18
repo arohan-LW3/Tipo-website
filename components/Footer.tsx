@@ -25,11 +25,11 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="bg-black pt-16 pb-10 md:pt-20 md:pb-12">
-      <div className="max-w-4xl mx-auto px-8 md:px-10">
-        {/* 4-column layout: equal widths & gaps, centered within container */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-10 mb-14 items-start justify-items-start">
+      <div className="w-full px-6 md:px-10">
+        {/* 4-column layout: fixed widths, centered as a group with equal side margins */}
+        <div className="flex flex-wrap justify-center gap-x-20 md:gap-x-24 gap-y-10 mb-14 items-start">
           {/* Brand block */}
-          <div>
+          <div className="w-[170px]">
             <Image
               src="/Tipo-website/images/footer-logo.webp"
               alt="TI:PO — Po:ro Apong"
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           {/* Explore */}
-          <div>
+          <div className="w-[130px]">
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
               Explore
             </h4>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           {/* Experience */}
-          <div>
+          <div className="w-[130px]">
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
               Experience
             </h4>
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
 
           {/* Connect */}
-          <div>
+          <div className="w-[130px]">
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-brand-gold font-medium mb-5">
               Connect
             </h4>
