@@ -25,7 +25,7 @@ export default function Footer() {
     color: "#D4922A",
     fontFamily: '"Mainlux", "Inter", sans-serif',
     fontWeight: 700,
-    letterSpacing: "2px",
+    letterSpacing: "2.4px",
   } as const;
 
   const linkStyle = {
@@ -50,10 +50,10 @@ export default function Footer() {
           <img
             src="/Tipo-website/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
-            className="h-5 w-auto object-contain mb-3 self-start"
+            className="h-6 w-auto object-contain mb-3 self-start"
           />
           <p
-            className="text-[12px] leading-[1.6]"
+            className="text-[14.4px] leading-[1.6]"
             style={{
               color: "#C8C8C8",
               fontFamily: '"Mainlux", "Inter", sans-serif',
@@ -63,7 +63,7 @@ export default function Footer() {
             Po:Ro Apong
           </p>
           <p
-            className="text-[12px] leading-[1.6]"
+            className="text-[14.4px] leading-[1.6]"
             style={{
               color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
@@ -73,7 +73,7 @@ export default function Footer() {
             Handcrafted by Women
           </p>
           <p
-            className="text-[12px] leading-[1.6]"
+            className="text-[14.4px] leading-[1.6]"
             style={{
               color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
@@ -83,7 +83,7 @@ export default function Footer() {
             Traditional Indian Rice Wine
           </p>
           <p
-            className="text-[12px] leading-[1.6] mt-5"
+            className="text-[14.4px] leading-[1.6] mt-5"
             style={{
               color: "#C8C8C8",
               fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
@@ -99,7 +99,7 @@ export default function Footer() {
         {/* Column 2 — Explore */}
         <div className="flex flex-col">
           <h4
-            className="text-[12px] uppercase mb-3"
+            className="text-[14.4px] uppercase mb-3"
             style={headerStyle}
           >
             Explore
@@ -109,7 +109,7 @@ export default function Footer() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  className="text-[14.4px] hover:text-white transition-colors duration-300"
                   style={{ ...linkStyle, lineHeight: 2 }}
                 >
                   {link.label}
@@ -122,7 +122,7 @@ export default function Footer() {
         {/* Column 3 — Experience */}
         <div className="flex flex-col">
           <h4
-            className="text-[12px] uppercase mb-3"
+            className="text-[14.4px] uppercase mb-3"
             style={headerStyle}
           >
             Experience
@@ -132,7 +132,7 @@ export default function Footer() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  className="text-[14.4px] hover:text-white transition-colors duration-300"
                   style={{ ...linkStyle, lineHeight: 2 }}
                 >
                   {link.label}
@@ -145,7 +145,7 @@ export default function Footer() {
         {/* Column 4 — Connect */}
         <div className="flex flex-col">
           <h4
-            className="text-[12px] uppercase mb-3"
+            className="text-[14.4px] uppercase mb-3"
             style={headerStyle}
           >
             Connect
@@ -155,7 +155,7 @@ export default function Footer() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-[12px] hover:text-white transition-colors duration-300"
+                  className="text-[14.4px] hover:text-white transition-colors duration-300"
                   style={{ ...linkStyle, lineHeight: 2 }}
                 >
                   {link.label}
