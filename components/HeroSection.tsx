@@ -22,6 +22,7 @@ export default function HeroSection() {
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
               WebkitMaskImage:
                 "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
+              mixBlendMode: "lighten",
             }}
           >
             <Image
