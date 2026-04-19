@@ -88,7 +88,7 @@ export default function MapSection() {
             className="hidden md:block absolute"
             style={{
               right: "-266px",
-              bottom: "-540px",
+              bottom: "-620px",
               transform: "rotate(0deg)",
               maskImage:
                 "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
@@ -107,7 +107,7 @@ export default function MapSection() {
 
           {/* Bottle overlay — mobile: pushed to right edge */}
           <div
-            className="md:hidden flex justify-end mt-[276px]"
+            className="md:hidden flex justify-end mt-[356px]"
             style={{
               marginRight: "-70px",
               maskImage:
@@ -127,7 +127,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="mt-[560px] md:mt-[560px]">
+        <div className="mt-[640px] md:mt-[640px]">
           <Image
             src="/Tipo-website/images/motif-latest.webp"
             alt="Decorative motif"
