@@ -89,7 +89,7 @@ export default function MapSection() {
             style={{
               right: "-266px",
               bottom: "-540px",
-              transform: "rotate(5deg)",
+              transform: "rotate(0deg)",
               maskImage:
                 "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
               WebkitMaskImage:
