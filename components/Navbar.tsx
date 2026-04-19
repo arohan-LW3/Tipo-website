@@ -17,7 +17,7 @@ export default function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 border-b"
       style={{
         background:
-          "linear-gradient(to right, #0A0A0F 0%, #12131A 50%, #1A1C26 100%)",
+          "linear-gradient(to right, #090909 0%, #0E0C0D 50%, #151314 100%)",
         borderBottomColor: "rgba(255,255,255,0.04)",
       }}
     >
