@@ -9,7 +9,7 @@ export default function VideoSection() {
 
         {/* YouTube Video */}
         <div className="w-full max-w-[1013px]">
-          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+          <div className="relative w-full overflow-hidden rounded-[15px]" style={{ paddingBottom: "56.25%" }}>
             <iframe
               src="https://www.youtube.com/embed/QipHkYuCm74"
               title="Po:ro Apong — The Process"
