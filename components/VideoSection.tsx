@@ -3,9 +3,17 @@ export default function VideoSection() {
     <section className="py-20 md:py-[207px]" style={{ backgroundColor: "#D9D9D9" }}>
       <div className="mx-auto px-6 md:px-10 lg:px-14 flex flex-col items-center gap-8">
         {/* Label */}
-        <span className="text-[14px] uppercase tracking-[0.25em] text-brand-gold font-semibold animate-glow" style={{ marginTop: "-20px" }}>
-          Witness the Process
-        </span>
+        <div className="w-full max-w-[1013px]" style={{ marginTop: "-20px" }}>
+          <span
+            className="text-[14px] uppercase tracking-[0.25em] text-brand-gold animate-glow"
+            style={{
+              fontFamily: '"Mainlux", "Inter", sans-serif',
+              fontWeight: 700,
+            }}
+          >
+            Witness the Process
+          </span>
+        </div>
 
         {/* YouTube Video */}
         <div className="w-full max-w-[1013px]">
