@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeritageSection() {
   return (
-    <section id="heritage" className="bg-brand-black py-20 md:py-28">
+    <section id="heritage" className="bg-brand-black py-20 md:py-28 mt-[60px]">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Two-column */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
