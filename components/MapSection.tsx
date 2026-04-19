@@ -74,13 +74,13 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative mb-16 mt-6 md:-mt-[285px] -translate-y-[175px] md:translate-y-0">
+        <div className="relative mb-16 mt-6 md:-mt-[357px] -translate-y-[247px] md:translate-y-0">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
-            className="w-full max-w-6xl mx-auto h-auto object-contain relative z-10"
+            className="w-full max-w-[864px] mx-auto h-auto object-contain relative z-10"
           />
 
           {/* Bottle overlay — desktop: flush to right edge */}
