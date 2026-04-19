@@ -5,8 +5,9 @@ export default function VideoSection() {
         {/* Label */}
         <div className="w-full max-w-[1013px]" style={{ marginTop: "-20px" }}>
           <span
-            className="text-[14px] uppercase tracking-[0.25em] text-brand-gold animate-glow"
+            className="text-[14px] uppercase tracking-[0.25em]"
             style={{
+              color: "#D4922A",
               fontFamily: '"Mainlux", "Inter", sans-serif',
               fontWeight: 700,
             }}
