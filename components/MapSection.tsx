@@ -87,8 +87,8 @@ export default function MapSection() {
           <div
             className="hidden md:block absolute"
             style={{
-              right: "-266px",
-              bottom: "-620px",
+              right: "-226px",
+              bottom: "-660px",
               transform: "rotate(0deg)",
               maskImage:
                 "radial-gradient(ellipse 70% 70% at 60% 55%, black 40%, transparent 100%)",
@@ -107,9 +107,9 @@ export default function MapSection() {
 
           {/* Bottle overlay — mobile: pushed to right edge */}
           <div
-            className="md:hidden flex justify-end mt-[356px]"
+            className="md:hidden flex justify-end mt-[396px]"
             style={{
-              marginRight: "-70px",
+              marginRight: "-30px",
               maskImage:
                 "radial-gradient(ellipse 60% 70% at 65% 55%, black 35%, transparent 100%)",
               WebkitMaskImage:
