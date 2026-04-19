@@ -99,8 +99,8 @@ export default function MapSection() {
             <Image
               src="/Tipo-website/images/bottle.jpeg"
               alt="TI:PO bottle angled presentation"
-              width={750}
-              height={1800}
+              width={938}
+              height={2250}
               className="object-contain"
             />
           </div>
@@ -119,8 +119,8 @@ export default function MapSection() {
             <Image
               src="/Tipo-website/images/bottle.jpeg"
               alt="TI:PO bottle angled presentation"
-              width={300}
-              height={720}
+              width={375}
+              height={900}
               className="object-contain"
             />
           </div>
