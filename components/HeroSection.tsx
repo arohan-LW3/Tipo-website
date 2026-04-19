@@ -63,9 +63,9 @@ export default function HeroSection() {
         {/* Text content — positioned over the himalaya image.
             pl values match Discover's left offsets so text shares the
             same vertical axis (x=180 mobile, x=80 desktop). */}
-        <div className="relative z-10 pt-[180px] md:pt-[240px] pb-40 md:pb-52">
+        <div className="relative z-10 pt-10 md:pt-[240px] pb-10 md:pb-52">
           <div
-            className="pl-[440px] md:pl-[340px] pr-6 md:pr-10 max-w-[680px] md:max-w-[740px] text-left"
+            className="pl-6 md:pl-[340px] pr-6 md:pr-10 max-w-full md:max-w-[740px] text-left"
             style={{
               fontFamily: '"Mainlux", "Inter", sans-serif',
             }}
