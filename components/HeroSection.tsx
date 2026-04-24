@@ -103,7 +103,15 @@ export default function HeroSection() {
                     <a
                       id="discover-btn"
                       href="#the-craft"
-                      className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow left-1/2 -translate-x-1/2 top-1/2 -translate-y-[calc(50%_+_60px)] md:left-16 lg:left-20 md:translate-x-0 md:-translate-y-[calc(50%-180px)]"
+                      className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 top-1/2 -translate-y-[calc(50%_+_60px)] md:left-16 lg:left-20 md:translate-x-0 md:-translate-y-[calc(50%-240px)]"
+                      style={{
+                        padding: "12px 22px",
+                        background: "rgba(0,0,0,0.78)",
+                        border: "1px solid var(--color-brand-gold)",
+                        borderRadius: 999,
+                        backdropFilter: "blur(6px)",
+                        boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
+                      }}
                     >
                       Discover &gt;&gt;
                     </a>
