@@ -9,7 +9,7 @@ export default function CellarSection() {
           {/* Left — image (2400x1800 / 4:3 frame) */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden scale-[1]">
             <Image
-              src="/Tipo-website/images/winery.webp"
+              src="/tipo-main-website/images/winery.webp"
               alt="Traditional winery with worker overseeing the process"
               fill
               className="object-cover"

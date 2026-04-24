@@ -29,7 +29,7 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/Tipo-website/images/map.webp"
+        src="/tipo-main-website/images/map.webp"
         alt="Brahmaputra Valley origin"
         width={1200}
         height={600}
@@ -47,7 +47,7 @@ export default function MobileMapBlock() {
         }}
       >
         <Image
-          src="/Tipo-website/images/bottle.jpeg"
+          src="/tipo-main-website/images/bottle.jpeg"
           alt="TI:PO bottle"
           width={375}
           height={900}
@@ -57,7 +57,7 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/Tipo-website/images/motif-latest.webp"
+        src="/tipo-main-website/images/motif-latest.webp"
         alt=""
         aria-hidden
         width={600}

@@ -7,7 +7,7 @@ export default function CommunitySection() {
         {/* Left — Image (shown after text on mobile) */}
         <div className="order-1 md:order-1">
           <Image
-            src="/Tipo-website/images/value-lives.webp"
+            src="/tipo-main-website/images/value-lives.webp"
             alt="Women of the Self Help Groups in traditional dresses"
             width={580}
             height={500}

@@ -24,7 +24,7 @@ export default function MobileFooter() {
         <div className="flex flex-col">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/Tipo-website/images/logo.webp"
+            src="/tipo-main-website/images/logo.webp"
             alt="TI:PO"
             className="h-[22px] w-auto object-contain mb-[10px] self-start"
           />

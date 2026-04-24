@@ -5,7 +5,7 @@ export default function MobileCraft() {
       className="md:hidden relative w-full"
       style={{
         minHeight: 600,
-        backgroundImage: "url(/Tipo-website/images/himalaya-new.webp)",
+        backgroundImage: "url(/tipo-main-website/images/himalaya-new.webp)",
         backgroundSize: "cover",
         backgroundPosition: "top",
       }}

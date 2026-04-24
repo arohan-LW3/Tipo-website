@@ -43,7 +43,7 @@ export default function Footer() {
         {/* Column 1 — Brand */}
         <div className="flex flex-col col-span-2 md:col-span-1">
           <img
-            src="/Tipo-website/images/logo.webp"
+            src="/tipo-main-website/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
             className="h-6 w-auto object-contain mb-3 self-start"
           />

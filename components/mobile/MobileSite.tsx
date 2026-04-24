@@ -26,7 +26,7 @@ export default function MobileSite() {
               "Women trained in botanical knowledge enter the surrounding landscape to gather what the year allows. They collect with restraint, selecting from more than sixty forest botanicals based on smell, maturity, texture, and memory.",
               "The forest decides what is available. The collectors decide what should be taken and what should be left behind.",
             ]}
-            image="/Tipo-website/images/herb-collector.webp"
+            image="/tipo-main-website/images/herb-collector.webp"
             imageAlt="Women herb collectors gathering botanicals in the Himalayan foothills"
           />
         </div>
@@ -40,7 +40,7 @@ export default function MobileSite() {
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster's accumulated experience.",
             "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
           ]}
-          image="/Tipo-website/images/brewmaster.webp"
+          image="/tipo-main-website/images/brewmaster.webp"
           imageAlt="Illustration of a brewmaster figure in traditional clothing with botanicals"
         />
 
@@ -51,7 +51,7 @@ export default function MobileSite() {
             "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
             "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
           ]}
-          image="/Tipo-website/images/mandala.webp"
+          image="/tipo-main-website/images/mandala.webp"
           imageAlt="Intricate circular mandala illustration of rice and botanicals"
         />
 
@@ -62,7 +62,7 @@ export default function MobileSite() {
             "This process resists massive scale by design.",
             "It depends on judgment rather than automation, and on time rather than speed.",
           ]}
-          image="/Tipo-website/images/solid-state.webp"
+          image="/tipo-main-website/images/solid-state.webp"
           imageAlt="Folk art figure with floral motifs representing solid-state fermentation"
         />
 
@@ -73,7 +73,7 @@ export default function MobileSite() {
             "Each batch is distinct. Variation is not corrected; it is accepted as truth.",
           ]}
           pullQuote={["This is not an inconsistency.", "This is nature."]}
-          image="/Tipo-website/images/drawing.webp"
+          image="/tipo-main-website/images/drawing.webp"
           imageAlt="Detailed illustrated scene showing the drawing process"
         />
 
@@ -85,7 +85,7 @@ export default function MobileSite() {
             "Our role is deliberately modest: introduce hygiene, scientific filtration, and clean bottling in modern winery setting so the Po:ro Apong can travel without altering its character.",
             "This quiet preservation is overseen by Ajoy Shaw, DipWSET, our Chief Winemaker, ensuring what reaches you is what was made at the source.",
           ]}
-          image="/Tipo-website/images/winery.webp"
+          image="/tipo-main-website/images/winery.webp"
           imageAlt="Traditional winery with worker overseeing the process"
         />
 
@@ -100,7 +100,7 @@ export default function MobileSite() {
             "Authority is not granted; it is recognized.",
             "This structure has preserved the craft not by freezing it in time, but by keeping it human.",
           ]}
-          image="/Tipo-website/images/it-takes-a-village.webp"
+          image="/tipo-main-website/images/it-takes-a-village.webp"
           imageAlt="Women brewmasters of the village in traditional attire"
         />
 
@@ -111,7 +111,7 @@ export default function MobileSite() {
             "To keep it intact, we spent two years selecting and partnering with two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG (Memberchuk), who are now part of the supply chain.",
             "The tradition stays with its rightful owners: the women brewmasters remain in control; we didn't outsource heritage, we safeguarded it.",
           ]}
-          image="/Tipo-website/images/value-lives.webp"
+          image="/tipo-main-website/images/value-lives.webp"
           imageAlt="Women of the Self Help Groups in traditional dresses"
         />
 

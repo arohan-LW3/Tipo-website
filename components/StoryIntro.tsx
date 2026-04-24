@@ -10,7 +10,7 @@ export default function StoryIntro() {
           {/* style={{height:360, width:480}}  */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
             <Image 
-              src="/Tipo-website/images/herb-collector.webp"
+              src="/tipo-main-website/images/herb-collector.webp"
               alt="Women herb collectors gathering botanicals in the Himalayan foothills"
               fill
               className="object-cover"
