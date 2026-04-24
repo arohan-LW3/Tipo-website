@@ -50,9 +50,9 @@ export default function MobileHero() {
 
   return (
     <section
-      className="md:hidden sticky top-0 z-[1] w-full h-[100svh] bg-black flex flex-col items-center justify-center overflow-hidden"
+      className="md:hidden sticky top-[30px] z-[1] w-full h-[80svh] bg-black flex flex-col items-center justify-center"
     >
-      <div ref={wrapRef} className="relative z-10 w-full h-full">
+      <div ref={wrapRef} className="relative z-10 w-full h-full overflow-hidden">
         <video
           ref={videoRef}
           autoPlay
@@ -74,12 +74,15 @@ export default function MobileHero() {
       <a
         ref={ctaRef}
         href="#the-craft"
-        className="animate-glow absolute left-1/2 bottom-[90px] z-20 min-h-11 min-w-[150px] px-[22px] py-3 inline-flex items-center justify-center gap-2 no-underline"
+        className="animate-glow absolute left-1/2 bottom-[-80px] z-20 inline-flex items-center justify-center gap-3 no-underline"
         style={{
           transform: "translateX(-50%)",
+          minHeight: 66,
+          minWidth: 225,
+          padding: "18px 33px",
           fontFamily: '"Mainlux", sans-serif',
           fontWeight: 300,
-          fontSize: "9pt",
+          fontSize: "13.5pt",
           letterSpacing: "0.25em",
           textTransform: "uppercase",
           color: "var(--color-brand-gold)",

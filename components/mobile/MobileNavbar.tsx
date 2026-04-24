@@ -16,12 +16,8 @@ export default function MobileNavbar() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 md:hidden"
       style={{
-        background: open
-          ? "linear-gradient(to bottom, rgba(0,0,0,0.92), rgba(0,0,0,0.75))"
-          : "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0) 100%)",
-        backdropFilter: open ? "blur(12px)" : "none",
-        WebkitBackdropFilter: open ? "blur(12px)" : "none",
-        transition: "background 0.35s ease, backdrop-filter 0.35s ease",
+        background: "#000000",
+        borderBottom: "1px solid rgba(255,255,255,0.06)",
       }}
     >
       <div className="flex items-center justify-between px-6 py-4">

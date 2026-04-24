@@ -34,8 +34,10 @@ export default function MobileMapBlock() {
         width={1200}
         height={600}
         className="w-full h-auto object-contain block"
+        style={{ marginTop: -60 }}
       />
 
+      <div style={{ marginTop: -80 }}>
       <div
         className="flex justify-end mt-6"
         style={{
@@ -52,10 +54,11 @@ export default function MobileMapBlock() {
           width={375}
           height={900}
           className="object-contain"
-          style={{ width: 220, height: "auto" }}
+          style={{ width: 440, height: "auto" }}
         />
       </div>
 
+      <div style={{ marginTop: -40 }}>
       <Image
         src="/tipo-main-website/images/motif-latest.webp"
         alt=""
@@ -80,6 +83,8 @@ export default function MobileMapBlock() {
           <br />
           info@heritagetipo.com
         </p>
+      </div>
+      </div>
       </div>
     </section>
   );

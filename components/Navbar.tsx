@@ -40,11 +40,11 @@ function scrollToParallax(e: React.MouseEvent) {
   rafScrollTo(window.innerHeight);
 }
 
-function scrollToHeritage(e: React.MouseEvent) {
-  e.preventDefault();
-  const target = document.getElementById("heritage");
+function scrollToSection(id: string) {
+  const target = document.getElementById(id);
   if (!target) return;
-  rafScrollTo(getAbsoluteTop(target) - 80, 900);
+  const top = target.getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({ top, behavior: "smooth" });
 }
 
 export default function Navbar() {
@@ -83,7 +83,11 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                onClick={link.label === "The Craft" ? scrollToParallax : undefined}
+                onClick={
+                  link.label === "The Craft" ? scrollToParallax :
+                  link.label === "The Women" ? (e) => { e.preventDefault(); scrollToSection("heritage"); } :
+                  (e) => { e.preventDefault(); scrollToSection("contact"); }
+                }
                 className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
               >
                 {link.label}
