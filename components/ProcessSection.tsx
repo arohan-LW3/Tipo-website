@@ -129,7 +129,7 @@ export default function ProcessSection() {
 >
             {/* Text */}
             <div
-              className={`flex flex-col gap-4 ${
+              className={`flex flex-col gap-4 order-2 ${
                 row.reversed ? "md:order-2" : "md:order-1"
               } ${row.largeText ? "md:py-5 max-w-[480px]" : ""}${
     i === 0 ? "mt-[25px]" : ""
@@ -197,7 +197,7 @@ export default function ProcessSection() {
 
             {/* Illustration */}
             <div
-              className={`flex justify-center ${
+              className={`flex justify-center order-1 ${
                 row.reversed ? "md:order-1" : "md:order-2"
               }`}
             >

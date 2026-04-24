@@ -7,7 +7,7 @@ export default function HeritageSection() {
         {/* Two-column */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
           {/* Left — Text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[40px]">
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[40px] order-2 md:order-1">
             <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
               <span className="tx-eyebrow block">It takes a village,</span>
               <span className="tx-tracked-light block">they say!</span>
@@ -36,7 +36,7 @@ export default function HeritageSection() {
           </div>
 
           {/* Right — Image */}
-          <div>
+          <div className="order-1 md:order-2">
             <Image
               src="/Tipo-website/images/it-takes-a-village.webp"
               alt="Women brewmasters of the village in traditional attire"
