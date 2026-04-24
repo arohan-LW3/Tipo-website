@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     "TI:PO — A premium traditional Indian rice wine, handcrafted by women from the Brahmaputra Valley, Assam.",
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/tipo-main-website/favicon.png", type: "image/png" },
+      { url: "/tipo-main-website/favicon.ico", type: "image/x-icon" },
     ],
   },
 };
