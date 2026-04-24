@@ -76,3 +76,54 @@ body {
 .animate-glow {
   animation: glow-pulse 2s ease-in-out infinite;
 }
+
+/* ============================================================
+   Typography system — font-family / weight / tracking only.
+   Sizes, colors, line-height remain as Tailwind utilities
+   on the element so they can vary per section.
+   ============================================================ */
+
+/* Mainlux bold + wide tracking: eyebrow labels, bold section titles */
+.tx-eyebrow {
+  font-family: "Mainlux", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+/* Mainlux light + medium tracking: stacked subtitles ("not the star.") */
+.tx-tracked-light {
+  font-family: "Mainlux", "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+/* Mainlux bold + tight tracking: hero main heading ("EASTERN HIMALAYAS") */
+.tx-heading {
+  font-family: "Mainlux", "Inter", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+/* Mainlux light (no tracking): serif subtitle / soft display text */
+.tx-serif-light {
+  font-family: "Mainlux", "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/* Mainlux bold (no tracking): pull-quotes, "India has Po:Ro Apong." */
+.tx-serif-bold {
+  font-family: "Mainlux", "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/* Yantramanav light: body paragraphs */
+.tx-body {
+  font-family: var(--font-yantramanav), "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/* Yantramanav medium: contact/phone strip */
+.tx-body-medium {
+  font-family: var(--font-yantramanav), "Inter", sans-serif;
+  font-weight: 500;
+}

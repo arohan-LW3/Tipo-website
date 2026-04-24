@@ -1,38 +1,72 @@
+"use client";
 import Image from "next/image";
+import {  useEffect } from "react";
 
 export default function HeroSection() {
+
+  useEffect(() => {
+    const video = document.getElementById("bgVideo") as HTMLVideoElement;
+    if (video) {
+      // Try to play
+          const playPromise = video.play();
+          
+          if (playPromise !== undefined) {
+              playPromise.catch(error => {
+                  // Autoplay was prevented
+                  console.log('Autoplay prevented:', error);
+                  
+                  // Show poster image instead
+                  video.style.display = 'none';
+              });
+          }
+
+          // Optional: Pause video when tab is not visible (saves battery/bandwidth)
+          document.addEventListener('visibilitychange', function() {
+              if (document.hidden) {
+                  video.pause();
+              } else {
+                  video.play();
+              }
+          });
+    }
+
+     
+  }, []);
+
   return (
     <section className="relative w-full flex flex-col items-center overflow-hidden">
       {/* Hero area — pure black to match bottle */}
-      <div className="relative w-full h-screen flex flex-col items-center justify-center bg-black">
+      <div className="relative w-full flex flex-col items-center justify-center bg-black">
         {/* Bottle centered + Discover positioned beside it */}
-        <div className="relative z-10 flex flex-col items-center -translate-y-[30px] md:translate-y-[100px]">
-          <div
-            className="translate-x-[20px] scale-[0.9] md:scale-[1.2] origin-top"
-            style={{
-              maskImage:
-                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
-              WebkitMaskImage:
-                "radial-gradient(ellipse 45% 72% at 50% 45%, black 15%, transparent 70%)",
-            }}
-          >
-            <Image
-              src="/Tipo-website/images/tipo-bottle-latest.webp"
-              alt="TI:PO Po:ro Apong rice wine bottle"
-              width={900}
-              height={2025}
-              className="object-contain max-h-[96vh]"
-              priority
-            />
+        <div className="relative z-10 flex flex-col items-center w-full">
+            <div className="video-background relative w-full h-[100svh] overflow-hidden" >
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    poster="/Tipo-website/videos/reveal-video_poster.jpg"
+                    id="bgVideo"
+                    className="absolute inset-0 w-full h-full object-cover" >
+                    {/* Mobile-optimized source (served to narrow viewports) */}
+                    <source
+                      src="/Tipo-website/videos/reveal-video_bg_mobile.mp4"
+                      type="video/mp4"
+                      media="(max-width: 767px)"
+                    />
+                    {/* WebM for better compression (Chrome, Firefox) */}
+                    <source src="/Tipo-website/videos/reveal-video_bg_high.webm" type="video/webm" />
+                    {/* MP4 fallback (Safari, older browsers) */}
+                    <source src="/Tipo-website/videos/reveal-video_bg_high.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                {/* Dark overlay for text readability */}
+                <div className="video-overlay absolute inset-0 bg-black/20 pointer-events-none"></div>
           </div>
           <a
             href="#the-craft"
-            className="absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow left-[180px] -translate-y-[calc(50%_+_60px)] md:left-[80px] md:-translate-y-[calc(50%-180px)]"
-            style={{
-              fontFamily: '"Mainlux Light", "Mainlux", "Inter", sans-serif',
-              fontWeight: 300,
-              fontSize: "10pt",
-            }}
+            className="tx-serif-light text-[10pt] absolute top-1/2 uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow left-1/2 -translate-x-1/2 -translate-y-[calc(50%_+_60px)] md:left-[80px] md:translate-x-0 md:-translate-y-[calc(50%-180px)]"
           >
             Discover &gt;&gt;
           </a>
@@ -40,7 +74,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div id="the-craft" className="w-full relative z-20 -mt-[60px]" style={{ minHeight: "61vw" }}>
+      <div id="the-craft" className="w-full relative z-20" style={{ minHeight: "61vw" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero.
             Height capped at 90% of the wrapper so the image is vertically
             cropped from the bottom (top anchor preserved for bottle blend). */}
@@ -64,45 +98,24 @@ export default function HeroSection() {
             pl values match Discover's left offsets so text shares the
             same vertical axis (x=180 mobile, x=80 desktop). */}
         <div className="relative z-10 pt-10 md:pt-[240px] pb-10 md:pb-52">
-          <div
-            className="pl-6 md:pl-[340px] pr-6 md:pr-10 max-w-full md:max-w-[740px] text-left"
-            style={{
-              fontFamily: '"Mainlux", "Inter", sans-serif',
-            }}
-          >
+          <div className="pl-6 md:pl-[340px] pr-6 md:pr-10 max-w-full md:max-w-[740px] text-left">
             {/* THE CRAFT label */}
-            <span
-              className="block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-6"
-              style={{ fontWeight: 300 }}
-            >
+            <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-6">
               The Craft
             </span>
 
-            {/* Subtitle — descriptive line: MAINLUX Light, gold */}
-            <p
-              className="text-brand-gold text-[22px] md:text-[24px] leading-[1.15] mb-0"
-              style={{ fontWeight: 300 }}
-            >
+            {/* Subtitle — descriptive line */}
+            <p className="tx-serif-light text-brand-gold text-[22px] md:text-[24px] leading-[1.15] mb-0">
               Born at the Foothills of the
             </p>
 
-            {/* Main heading — emphasized phrase: MAINLUX Bold */}
-            <h1
-              className="text-brand-gold text-[22px] md:text-[24px] uppercase leading-[1.15] mb-6"
-              style={{ fontWeight: 900, letterSpacing: "0.02em" }}
-            >
+            {/* Main heading — emphasized phrase */}
+            <h1 className="tx-heading text-brand-gold text-[22px] md:text-[24px] uppercase leading-[1.15] mb-6">
               Eastern Himalayas
             </h1>
 
-            {/* Intro paragraphs — body: Yantramanav Light */}
-            <div
-              className="flex flex-col gap-4 max-w-[420px]"
-              style={{
-                fontFamily:
-                  'var(--font-yantramanav), "Inter", sans-serif',
-                fontWeight: 300,
-              }}
-            >
+            {/* Intro paragraphs */}
+            <div className="tx-body flex flex-col gap-4 max-w-[420px]">
               <p className="text-[13px] leading-[1.55] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.

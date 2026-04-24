@@ -16,58 +16,23 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 -translate-y-[78px]">
-            <h2
-              className="text-xl md:text-2xl leading-snug"
-              style={{
-                color: "#D4922A",
-                fontFamily: '"Mainlux", "Inter", sans-serif',
-              }}
-            >
-              <span
-                style={{
-                  display: "block",
-                  fontWeight: 700,
-                  letterSpacing: "0.18em",
-                }}
-              >
-                Technology is the valet,
-              </span>
-              <span
-                style={{
-                  display: "block",
-                  fontWeight: 300,
-                  letterSpacing: "0.08em",
-                }}
-              >
-                not the star.
-              </span>
+          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 pb-10 md:-translate-y-[78px]">
+            <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
+              <span className="tx-eyebrow block">Technology is the valet,</span>
+              <span className="tx-tracked-light block">not the star.</span>
             </h2>
-            <p
-              className="text-[16px] leading-[1.4]"
-              style={{
-                color: "#D4922A",
-                fontFamily: '"Mainlux", "Inter", sans-serif',
-                fontWeight: 300,
-              }}
-            >
+            <p className="tx-serif-light text-[16px] leading-[1.4] text-[#D4922A]">
               Tipo did not reinterpret
               <br />
               Po:ro Apong.
             </p>
-            <div
-              className="flex flex-col gap-4"
-              style={{
-                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-                fontWeight: 300,
-              }}
-            >
-              <p className="text-[16px] leading-[1.8] text-brand-text">
+            <div className="tx-body flex flex-col gap-4">
+              <p className="text-[16px] leading-[1.4] md:leading-[1.8] text-brand-text">
                 Our role is deliberately modest: introduce hygiene, scientific
                 filtration, and clean bottling in modern winery setting so the
                 Po:ro Apong can travel without altering its character.
               </p>
-              <p className="leading-[1.8] text-brand-text" style={{ fontSize: "16px" }}>
+              <p className="text-[16px] leading-[1.4] md:leading-[1.8] text-brand-text">
                 This quiet preservation is overseen by Ajoy Shaw, DipWSET, our
                 Chief Winemaker, ensuring what reaches you is what was made at
                 the source: the Brahmaputra Valley, kept pristine in glass.

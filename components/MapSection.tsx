@@ -2,79 +2,30 @@ import Image from "next/image";
 
 export default function MapSection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden -mt-[100px]">
+    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden md:-mt-[100px]">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Welcome heading + culture quote */}
         <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20 -translate-y-[45px]">
-          <h2
-            className="text-xl md:text-2xl leading-snug"
-            style={{
-              color: "#D4922A",
-              fontFamily: '"Mainlux", "Inter", sans-serif',
-            }}
-          >
-            <span
-              style={{
-                display: "block",
-                fontWeight: 700,
-                letterSpacing: "0.18em",
-              }}
-            >
-              Welcome
-            </span>
-            <span
-              style={{
-                display: "block",
-                fontWeight: 300,
-                letterSpacing: "0.08em",
-              }}
-            >
-              TiPo&apos;s Po:Ro Apong
-            </span>
-            <span
-              style={{
-                display: "block",
-                fontWeight: 300,
-                letterSpacing: "0.08em",
-              }}
-            >
-              to your world
-            </span>
+          <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
+            <span className="tx-eyebrow block">Welcome</span>
+            <span className="tx-tracked-light block">TiPo&apos;s Po:Ro Apong</span>
+            <span className="tx-tracked-light block">to your world</span>
           </h2>
           <div className="flex flex-col gap-1">
-            <p
-              className="text-[14px] leading-[1.8] text-brand-text"
-              style={{
-                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-                fontWeight: 300,
-              }}
-            >
+            <p className="tx-body text-[14px] leading-[1.4] md:leading-[1.8] text-brand-text">
               Every culture has a fermentation that is unique to them.
             </p>
-            <p
-              className="text-[14px] leading-[1.8] text-brand-text"
-              style={{
-                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-                fontWeight: 300,
-              }}
-            >
+            <p className="tx-body text-[14px] leading-[1.4] md:leading-[1.8] text-brand-text">
               Japan has Sak&eacute;, Korea has Soju, Europe has Wine.
             </p>
-            <p
-              className="text-[16px] leading-[1.4]"
-              style={{
-                color: "#C8C8C8",
-                fontFamily: '"Mainlux", "Inter", sans-serif',
-                fontWeight: 700,
-              }}
-            >
+            <p className="tx-serif-bold text-[16px] leading-[1.4] text-[#C8C8C8]">
               India has Po:Ro Apong.
             </p>
           </div>
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative mb-16 mt-6 md:-mt-[255px] -translate-y-[145px] md:translate-y-0">
+        <div className="relative md:mb-16 mt-6 md:-mt-[255px] -translate-y-[45px] md:-translate-y-[145px] md:translate-y-0">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
@@ -107,7 +58,7 @@ export default function MapSection() {
 
           {/* Bottle overlay — mobile: pushed to right edge */}
           <div
-            className="md:hidden flex justify-end mt-[516px]"
+            className="md:hidden flex justify-end md:mt-[516px]"
             style={{
               marginRight: "-30px",
               maskImage:
@@ -127,7 +78,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="mt-[670px] md:mt-[640px]">
+        <div className="md:mt-[640px]">
           <Image
             src="/Tipo-website/images/motif-latest.webp"
             alt="Decorative motif"
@@ -142,25 +93,10 @@ export default function MapSection() {
             }}
           />
           <div className="text-center mt-[45px]">
-            <h2
-              className="text-xl md:text-2xl leading-snug mb-[13px]"
-              style={{
-                color: "#D4922A",
-                fontFamily: '"Mainlux", "Inter", sans-serif',
-                fontWeight: 700,
-                letterSpacing: "0.18em",
-              }}
-            >
+            <h2 className="tx-eyebrow text-xl md:text-2xl leading-snug mb-[13px] text-[#D4922A]">
               Contact &amp; Distribution
             </h2>
-            <p
-              className="text-[14px] leading-[1.8]"
-              style={{
-                color: "#C8C8C8",
-                fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-                fontWeight: 500,
-              }}
-            >
+            <p className="tx-body-medium text-[14px] leading-[1.4] md:leading-[1.8] text-[#C8C8C8]">
               +91 88220 92973 &nbsp;|&nbsp; info@heritagetipo.com
             </p>
           </div>

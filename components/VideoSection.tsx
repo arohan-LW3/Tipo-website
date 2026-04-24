@@ -4,14 +4,7 @@ export default function VideoSection() {
       <div className="mx-auto px-6 md:px-10 lg:px-14 flex flex-col items-center gap-8">
         {/* Label */}
         <div className="w-full max-w-[1138px]" style={{ marginTop: "-20px" }}>
-          <span
-            className="text-[14px] uppercase tracking-[0.25em]"
-            style={{
-              color: "#D4922A",
-              fontFamily: '"Mainlux", "Inter", sans-serif',
-              fontWeight: 700,
-            }}
-          >
+          <span className="tx-serif-bold text-[14px] uppercase tracking-[0.25em] text-[#D4922A]">
             Witness the Process
           </span>
         </div>

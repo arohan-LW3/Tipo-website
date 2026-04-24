@@ -136,83 +136,56 @@ export default function ProcessSection() {
   }`}
             >
               <h2
-                className={`text-xl md:text-2xl leading-snug ${
+                className={`text-xl md:text-2xl leading-snug text-[#D4922A] ${
                   row.stacked ? "" : "whitespace-nowrap"
                 }`}
-                style={{
-                  color: "#D4922A",
-                  fontFamily: '"Mainlux", "Inter", sans-serif',
-                }}
               >
                 {row.label && (
                   <span
-                    style={{
-                      fontWeight: row.boldBoth || row.boldLabel ? 700 : 300,
-                      letterSpacing:
-                        row.boldBoth || row.boldLabel ? "0.18em" : "0.08em",
-                      textTransform: row.boldLabel ? "uppercase" : undefined,
-                      display: row.stacked ? "block" : undefined,
-                    }}
+                    className={`${
+                      row.boldBoth || row.boldLabel ? "tx-eyebrow" : "tx-tracked-light"
+                    } ${row.boldLabel ? "uppercase" : ""} ${
+                      row.stacked ? "block" : ""
+                    }`}
                   >
                     {row.label}
                     {row.stacked ? "" : " "}
                   </span>
                 )}
                 <span
-                  style={{
-                    fontWeight: row.boldBoth ? 700 : row.boldLabel ? 300 : 700,
-                    letterSpacing:
-                      row.boldBoth ? "0.18em" : row.boldLabel ? "0.08em" : "0.18em",
-                    display: row.stacked ? "block" : undefined,
-                    color: row.headingColor,
-                  }}
+                  className={`${
+                    row.boldLabel ? "tx-tracked-light" : "tx-eyebrow"
+                  } ${row.stacked ? "block" : ""}`}
+                  style={row.headingColor ? { color: row.headingColor } : undefined}
                 >
                   {row.heading}
                 </span>
               </h2>
               {row.highlight && (
                 <p
-                  className={`${
+                  className={`tx-serif-light leading-[1.4] md:leading-[1.85] text-[#D4922A] ${
                     row.largeText ? "text-[16px]" : "text-[14px]"
-                  } leading-[1.85]`}
-                  style={{
-                    color: "#D4922A",
-                    fontFamily: '"Mainlux", "Inter", sans-serif',
-                    fontWeight: 300,
-                  }}
+                  }`}
                 >
                   {row.highlight}
                 </p>
               )}
-              <div
-                className="flex flex-col gap-4"
-                style={{
-                  fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-                  fontWeight: 300,
-                }}
-              >
+              <div className="tx-body flex flex-col gap-4">
                 {row.body.map((para, j) => (
                   <p
                     key={j}
                     className="text-brand-text"
-style={{
-  fontSize: row.bodySize || "14px",
-  lineHeight: row.bodySize ? "1.9" : "1.85",
-}}
+                    style={{
+                      fontSize: row.bodySize || "14px",
+                      lineHeight: "1.85",
+                    }}
                   >
                     {para}
                   </p>
                 ))}
               </div>
               {row.pullQuote && (
-                <div
-                  className="flex flex-col gap-1 text-brand-text"
-                  style={{
-                    marginTop: "8px",
-                    fontFamily: '"Mainlux", "Inter", sans-serif',
-                    fontWeight: 700,
-                  }}
-                >
+                <div className="tx-serif-bold flex flex-col gap-1 text-brand-text mt-2">
                   {row.pullQuote.map((line, k) => (
                     <p key={k} className="text-[16px] leading-[1.4]">
                       {line}

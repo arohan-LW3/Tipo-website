@@ -21,149 +21,75 @@ export default function Footer() {
     { label: "Press Kit", href: "#" },
   ];
 
-  const headerStyle = {
-    color: "#D4922A",
-    fontFamily: '"Mainlux", "Inter", sans-serif',
-    fontWeight: 700,
-    letterSpacing: "2.4px",
-  } as const;
+  const columns: { title: string; links: { label: string; href: string }[] }[] = [
+    { title: "Explore", links: exploreLinks },
+    { title: "Experience", links: experienceLinks },
+    { title: "Connect", links: connectLinks },
+  ];
 
-  const linkStyle = {
-    color: "#C8C8C8",
-    fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-    fontWeight: 300,
-  } as const;
+  const bodyLine = "tx-body text-[14.4px] leading-[1.6] text-[#C8C8C8]";
 
   return (
     <footer
       id="contact"
-      className="py-[60px] px-[240px]"
+      className="py-10 px-6 md:py-[60px] md:px-[240px]"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
-      {/* 4 columns, evenly spaced horizontally */}
-      <div className="flex flex-wrap justify-between gap-y-10 items-start w-full">
+      {/* 4 columns on desktop, 2-col grid on mobile (brand spans full width) */}
+      <div className="grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
         {/* Column 1 — Brand */}
-        <div className="flex flex-col">
+        <div className="flex flex-col col-span-2 md:col-span-1">
           <img
             src="/Tipo-website/images/logo.webp"
             alt="TI:PO Po:Ro Apong logo"
             className="h-6 w-auto object-contain mb-3 self-start"
           />
-          <p
-            className="text-[14.4px] leading-[1.6]"
-            style={{
-              color: "#C8C8C8",
-              fontFamily: '"Mainlux", "Inter", sans-serif',
-              fontWeight: 300,
-            }}
-          >
+          <p className="tx-serif-light text-[14.4px] leading-[1.6] text-[#C8C8C8]">
             Po:Ro Apong
           </p>
-          <p
-            className="text-[14.4px] leading-[1.6]"
-            style={{
-              color: "#C8C8C8",
-              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-              fontWeight: 300,
-            }}
-          >
-            Handcrafted by Women
-          </p>
-          <p
-            className="text-[14.4px] leading-[1.6]"
-            style={{
-              color: "#C8C8C8",
-              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-              fontWeight: 300,
-            }}
-          >
-            Traditional Indian Rice Wine
-          </p>
-          <p
-            className="text-[14.4px] leading-[1.6] mt-5"
-            style={{
-              color: "#C8C8C8",
-              fontFamily: 'var(--font-yantramanav), "Inter", sans-serif',
-              fontWeight: 300,
-            }}
-          >
+          <p className={bodyLine}>Handcrafted by Women</p>
+          <p className={bodyLine}>Traditional Indian Rice Wine</p>
+          <p className={`${bodyLine} mt-5`}>
             From the Brahmaputra Valley,
             <br />
             Assam, India
           </p>
         </div>
 
-        {/* Column 2 — Explore */}
-        <div className="flex flex-col">
-          <h4
-            className="text-[14.4px] uppercase mb-3"
-            style={headerStyle}
+        {columns.map(({ title, links }) => (
+          <div
+            key={title}
+            className={
+              "flex flex-col" +
+              (title === "Connect" ? " col-span-2 md:col-span-1" : "")
+            }
           >
-            Explore
-          </h4>
-          <ul className="flex flex-col">
-            {exploreLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-[14.4px] hover:text-white transition-colors duration-300"
-                  style={{ ...linkStyle, lineHeight: 2 }}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Column 3 — Experience */}
-        <div className="flex flex-col">
-          <h4
-            className="text-[14.4px] uppercase mb-3"
-            style={headerStyle}
-          >
-            Experience
-          </h4>
-          <ul className="flex flex-col">
-            {experienceLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-[14.4px] hover:text-white transition-colors duration-300"
-                  style={{ ...linkStyle, lineHeight: 2 }}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Column 4 — Connect */}
-        <div className="flex flex-col">
-          <h4
-            className="text-[14.4px] uppercase mb-3"
-            style={headerStyle}
-          >
-            Connect
-          </h4>
-          <ul className="flex flex-col">
-            {connectLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-[14.4px] hover:text-white transition-colors duration-300"
-                  style={{ ...linkStyle, lineHeight: 2 }}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+            <h4 className="tx-eyebrow uppercase text-[14.4px] mb-3 text-[#D4922A]">
+              {title}
+            </h4>
+            <ul
+              className={
+                title === "Connect"
+                  ? "flex flex-row md:flex-col gap-x-6 gap-y-2"
+                  : "flex flex-col"
+              }
+            >
+              {links.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="tx-body text-[14.4px] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </footer>
   );
