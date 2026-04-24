@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function MapSection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden md:-mt-[100px]">
+    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden mt-0 md:-mt-[100px]">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Welcome heading + culture quote */}
-        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20 -translate-y-[45px]">
+        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20">
           <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
             <span className="tx-eyebrow block">Welcome</span>
             <span className="tx-tracked-light block">TiPo&apos;s Po:Ro Apong</span>
@@ -25,7 +25,7 @@ export default function MapSection() {
         </div>
 
         {/* Map + Bottle — negative margin only on md+ to avoid text overlapping map on mobile */}
-        <div className="relative md:mb-16 mt-6 md:-mt-[255px] -translate-y-[45px] md:-translate-y-[145px] md:translate-y-0">
+        <div className="relative md:mb-16 mt-6 md:-mt-[200px]">
           <Image
             src="/Tipo-website/images/map.webp"
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
@@ -78,7 +78,7 @@ export default function MapSection() {
         </div>
 
         {/* Motif + Contact & Distribution */}
-        <div className="md:mt-[640px]">
+        <div id="contact" className="mt-8 md:mt-[560px]">
           <Image
             src="/Tipo-website/images/motif-latest.webp"
             alt="Decorative motif"

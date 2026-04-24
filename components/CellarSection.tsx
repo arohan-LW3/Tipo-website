@@ -5,7 +5,8 @@ export default function CellarSection() {
     <section className="bg-brand-black py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Two-column 50/50: matches StoryIntro so the image renders identically sized */}
-<div className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-x-16 gap-y-12 items-start -translate-y-[30px]">          {/* Left — image (2400x1800 / 4:3 frame) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-start">
+          {/* Left — image (2400x1800 / 4:3 frame) */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden scale-[1]">
             <Image
               src="/Tipo-website/images/winery.webp"
@@ -16,7 +17,7 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4 max-w-[480px] md:py-20 pb-10 md:-translate-y-[78px]">
+          <div className="flex flex-col gap-4 w-full md:max-w-[480px] pb-10 md:pt-10 md:-mt-10">
             <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
               <span className="tx-eyebrow block">Technology is the valet,</span>
               <span className="tx-tracked-light block">not the star.</span>

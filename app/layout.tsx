@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   description:
     "TI:PO — A premium traditional Indian rice wine, handcrafted by women from the Brahmaputra Valley, Assam.",
   icons: {
-  icon: "/favicon.ico",
-},
+    icon: "/Tipo-website/favicon.ico",
+  },
 };
 
 export default function RootLayout({

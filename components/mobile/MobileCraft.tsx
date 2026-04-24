@@ -1,0 +1,50 @@
+export default function MobileCraft() {
+  return (
+    <section
+      id="the-craft"
+      className="md:hidden relative w-full"
+      style={{
+        minHeight: 600,
+        backgroundImage: "url(/Tipo-website/images/himalaya-new.webp)",
+        backgroundSize: "cover",
+        backgroundPosition: "top",
+      }}
+    >
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.55) 42%, rgba(0,0,0,0.95) 100%)",
+        }}
+      />
+      <div className="relative z-10 px-6 pt-40 pb-[60px]">
+        <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-5">
+          The Craft
+        </span>
+        <p className="tx-serif-light text-brand-gold text-[22px] leading-[1.2] m-0">
+          Born at the Foothills of the
+        </p>
+        <h1 className="tx-heading text-brand-gold text-[22px] uppercase leading-[1.2] mt-0 mb-5">
+          Eastern Himalayas
+        </h1>
+        <div className="tx-body flex flex-col gap-[14px]">
+          <p className="text-[13px] leading-[1.55] text-brand-text m-0">
+            Po:ro Apong is born where the Eastern Himalayan foothills spill into
+            Assam&apos;s Brahmaputra Valley.
+          </p>
+          <p className="text-[13px] leading-[1.55] text-brand-text m-0">
+            From this landscape emerges a living library of flavour &mdash; 60+
+            forest botanicals, each shaped by soil, climate and time. Herbs are
+            gathered from the mountains; rice rises from the river&apos;s
+            alluvial fields.
+          </p>
+          <p className="text-[13px] leading-[1.55] text-brand-text m-0">
+            Every year the valley resets itself &mdash; flood, monsoon, heat and
+            generous humidity &mdash; creating one of India&apos;s richest
+            biodiversities.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

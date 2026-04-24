@@ -3,6 +3,50 @@
 import { useState } from "react";
 import Image from "next/image";
 
+function easeInOutQuart(t: number) {
+  return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+}
+
+function getAbsoluteTop(el: HTMLElement): number {
+  let top = 0;
+  let cur: HTMLElement | null = el;
+  while (cur) {
+    top += cur.offsetTop;
+    cur = cur.offsetParent as HTMLElement | null;
+  }
+  return top;
+}
+
+function rafScrollTo(end: number, duration = 800, onDone?: () => void) {
+  const start = window.scrollY;
+  const distance = end - start;
+  const startTime = performance.now();
+  document.documentElement.style.scrollBehavior = "auto";
+  const tick = (now: number) => {
+    const t = Math.min(1, (now - startTime) / duration);
+    window.scrollTo(0, start + distance * easeInOutQuart(t));
+    if (t < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      document.documentElement.style.scrollBehavior = "";
+      onDone?.();
+    }
+  };
+  requestAnimationFrame(tick);
+}
+
+function scrollToParallax(e: React.MouseEvent) {
+  e.preventDefault();
+  rafScrollTo(window.innerHeight);
+}
+
+function scrollToHeritage(e: React.MouseEvent) {
+  e.preventDefault();
+  const target = document.getElementById("heritage");
+  if (!target) return;
+  rafScrollTo(getAbsoluteTop(target) - 80, 900);
+}
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -39,6 +83,7 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
+                onClick={link.label === "The Craft" ? scrollToParallax : (e) => { e.preventDefault(); document.getElementById(link.label === "The Women" ? "heritage" : "contact")?.scrollIntoView(); }}
                 className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
               >
                 {link.label}
@@ -82,7 +127,7 @@ export default function Navbar() {
             <li key={link.label}>
               <a
                 href={link.href}
-                onClick={() => setMenuOpen(false)}
+                onClick={(e) => { if (link.label === "The Craft") scrollToParallax(e); setMenuOpen(false); }}
                 className="tx-serif-light text-[12px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300"
               >
                 {link.label}

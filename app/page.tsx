@@ -8,22 +8,29 @@ import HeritageSection from "@/components/HeritageSection";
 import CommunitySection from "@/components/CommunitySection";
 import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
+import MobileSite from "@/components/mobile/MobileSite";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <StoryIntro />
-        <ProcessSection />
-        <CellarSection />
-        <VideoSection />
-        <HeritageSection />
-        <CommunitySection />
-        <MapSection />
-      </main>
-      <Footer />
+      {/* Mobile layout — replaces the desktop tree on screens < md */}
+      <MobileSite />
+
+      {/* Desktop layout — hidden on mobile */}
+      <div className="hidden md:block">
+        <Navbar />
+        <main>
+          <HeroSection />
+          <StoryIntro />
+          <ProcessSection />
+          <CellarSection />
+          <VideoSection />
+          <HeritageSection />
+          <CommunitySection />
+          <MapSection />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

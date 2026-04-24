@@ -22,7 +22,6 @@ interface ProcessRow {
   pullQuote?: string[];
   /** If true, use the larger 28px heading / 14px #C8C8C8 body scale + wider padding. */
   largeText?: boolean;
-  bodySize?: string;
 }
 
 const rows: ProcessRow[] = [
@@ -40,7 +39,6 @@ const rows: ProcessRow[] = [
     imageW: 520,
     imageH: 520,
     reversed: false,
-    bodySize: "16px",
   },
   {
     label: "FIRE, RICE",
@@ -57,7 +55,6 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldLabel: true,
     largeText: true,
-    bodySize: "16px",
   },
   {
     label: "Grain Boundary",
@@ -76,7 +73,6 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldBoth: true,
     largeText: true,
-    bodySize: "16px",
   },
   {
     label: "A RARE SOLID-STATE",
@@ -96,7 +92,6 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldLabel: true,
     largeText: true,
-    bodySize: "16px",
   },
   {
     label: "",
@@ -112,7 +107,6 @@ const rows: ProcessRow[] = [
     imageH: 520,
     reversed: false,
     largeText: true,
-    bodySize: "16px",
   },
 ];
 
@@ -124,15 +118,15 @@ export default function ProcessSection() {
           <div
             key={i}
             className={`grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 items-center ${
-  i === 1 ? "-mt-10 md:-mt-10" : i === 2 ? "-mt-10 md:-mt-10" : ""
+  i === 1 ? "mt-0 md:-mt-10" : i === 2 ? "mt-0 md:-mt-10" : ""
 }`}
 >
             {/* Text */}
             <div
               className={`flex flex-col gap-4 order-2 ${
                 row.reversed ? "md:order-2" : "md:order-1"
-              } ${row.largeText ? "md:py-5 max-w-[480px]" : ""}${
-    i === 0 ? "mt-[25px]" : ""
+              } ${row.largeText ? "md:py-5 w-full md:max-w-[480px]" : ""}${
+    i === 0 ? " mt-0 md:mt-[25px]" : ""
   }`}
             >
               <h2
@@ -174,11 +168,7 @@ export default function ProcessSection() {
                 {row.body.map((para, j) => (
                   <p
                     key={j}
-                    className="text-brand-text"
-                    style={{
-                      fontSize: row.bodySize || "14px",
-                      lineHeight: "1.85",
-                    }}
+                    className="text-[14px] md:text-[16px] leading-[1.85] text-brand-text"
                   >
                     {para}
                   </p>
@@ -208,14 +198,14 @@ export default function ProcessSection() {
                 height={row.imageH}
                 className={`w-full h-auto object-contain ${
   i === 0
-    ? "max-w-[520px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[520px]"
     : i === 1
-    ? "max-w-[528px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[528px]"
     : i === 2
-    ? "max-w-[580px]" // 👈 increase size here
+    ? "max-w-[300px] sm:max-w-[420px] md:max-w-[580px]"
     : i === 4
-    ? "max-w-[528px]"
-    : "max-w-[440px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[528px]"
+    : "max-w-[260px] sm:max-w-[340px] md:max-w-[440px]"
 }`}
               />
             </div>

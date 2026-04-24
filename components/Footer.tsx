@@ -32,14 +32,14 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="py-10 px-6 md:py-[60px] md:px-[240px]"
+      className="py-10 px-6 md:py-[60px] md:px-16 lg:px-24"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
       {/* 4 columns on desktop, 2-col grid on mobile (brand spans full width) */}
-      <div className="grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
         {/* Column 1 — Brand */}
         <div className="flex flex-col col-span-2 md:col-span-1">
           <img
