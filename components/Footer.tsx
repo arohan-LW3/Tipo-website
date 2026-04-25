@@ -32,14 +32,14 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="py-10 px-6 md:py-[60px] md:px-16 lg:px-24"
+      className="py-10 px-6 md:py-[60px] md:px-16 lg:px-24 no-magnify"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
       {/* 4 columns on desktop, 2-col grid on mobile (brand spans full width) */}
-      <div className="max-w-7xl mx-auto grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
         {/* Column 1 — Brand */}
         <div className="flex flex-col col-span-2 md:col-span-1">
           <img
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="tx-body text-[14.4px] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300"
+                    className="tx-body text-[14.4px] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300 border-b border-transparent md:hover:border-brand-gold pb-0.5"
                   >
                     {link.label}
                   </a>
