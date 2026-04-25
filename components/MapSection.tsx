@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function MapSection() {
   return (
-    <section className="bg-brand-black py-20 md:py-28 relative overflow-hidden mt-0 md:-mt-[100px]">
+    <section className="bg-brand-black py-20 md:py-28 relative mt-0 md:-mt-[100px] no-magnify">
       <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
         {/* Welcome heading + culture quote */}
-        <div className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20">
+        <div data-parallax-text className="max-w-[600px] mx-auto text-center flex flex-col gap-4 md:py-20">
           <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
             <span className="tx-eyebrow block">Welcome</span>
             <span className="tx-tracked-light block">TiPo&apos;s Po:Ro Apong</span>
@@ -31,7 +31,7 @@ export default function MapSection() {
             alt="World map highlighting the Brahmaputra Valley origin of Po:ro Apong"
             width={1200}
             height={600}
-            className="w-full max-w-[864px] mx-auto h-auto object-contain relative z-10"
+            className="w-full max-w-[864px] mx-auto h-auto object-contain relative z-10 force-magnify"
           />
 
           {/* Bottle overlay — desktop: flush to right edge */}
@@ -48,10 +48,10 @@ export default function MapSection() {
             }}
           >
             <Image
-              src="/tipo-main-website/images/bottle.jpeg"
+              src="/tipo-main-website/images/Bottom bottle latest.webp"
               alt="TI:PO bottle angled presentation"
-              width={938}
-              height={2250}
+              width={1055}
+              height={2531}
               className="object-contain"
             />
           </div>
@@ -68,7 +68,7 @@ export default function MapSection() {
             }}
           >
             <Image
-              src="/tipo-main-website/images/bottle.jpeg"
+              src="/tipo-main-website/images/Bottom bottle latest.webp"
               alt="TI:PO bottle angled presentation"
               width={375}
               height={900}

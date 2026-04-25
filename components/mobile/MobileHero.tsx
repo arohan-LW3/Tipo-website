@@ -77,12 +77,12 @@ export default function MobileHero() {
         className="animate-glow absolute left-1/2 bottom-[-80px] z-20 inline-flex items-center justify-center gap-3 no-underline"
         style={{
           transform: "translateX(-50%)",
-          minHeight: 66,
-          minWidth: 225,
-          padding: "18px 33px",
+          minHeight: 50,
+          minWidth: 169,
+          padding: "13px 25px",
           fontFamily: '"Mainlux", sans-serif',
           fontWeight: 300,
-          fontSize: "13.5pt",
+          fontSize: "10pt",
           letterSpacing: "0.25em",
           textTransform: "uppercase",
           color: "var(--color-brand-gold)",

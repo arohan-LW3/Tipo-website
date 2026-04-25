@@ -117,16 +117,28 @@ export default function ProcessSection() {
         {rows.map((row, i) => (
           <div
             key={i}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 items-center ${
-  i === 1 ? "mt-0 md:-mt-10" : i === 2 ? "mt-0 md:-mt-10" : ""
-}`}
+            className={`grid grid-cols-1 gap-x-16 gap-y-6 items-center ${
+  i === 0
+    ? "md:grid-cols-[2fr_3fr]"
+    : i === 1
+    ? "md:grid-cols-[3fr_2fr]"
+    : i === 2
+    ? "md:grid-cols-[2fr_3fr] md:gap-x-2"
+    : i === 3
+    ? "md:grid-cols-2 md:gap-x-4"
+    : i === 4
+    ? "md:grid-cols-2 md:gap-x-4"
+    : "md:grid-cols-2"
+} ${i === 1 ? "mt-0 md:-mt-10" : i === 2 ? "mt-0 md:-mt-[62px] md:-mb-[22px]" : ""} ${i === 3 ? "md:translate-x-12" : ""}`}
 >
             {/* Text */}
             <div
-              className={`flex flex-col gap-4 order-2 ${
+              data-parallax-text
+              className={`flex flex-col gap-4 md:gap-2 order-2 ${
                 row.reversed ? "md:order-2" : "md:order-1"
               } ${row.largeText ? "md:py-5 w-full md:max-w-[480px]" : ""}${
-    i === 0 ? " mt-0 md:mt-[25px]" : ""
+    i === 0 ? " mt-0 md:mt-[25px]" : ""}${
+    i === 2 ? " md:ml-6" : ""
   }`}
             >
               <h2
@@ -157,18 +169,18 @@ export default function ProcessSection() {
               </h2>
               {row.highlight && (
                 <p
-                  className={`tx-serif-light leading-[1.4] md:leading-[1.85] text-[#D4922A] ${
+                  className={`tx-serif-light leading-[1.4] text-[#D4922A] ${
                     row.largeText ? "text-[16px]" : "text-[14px]"
                   }`}
                 >
                   {row.highlight}
                 </p>
               )}
-              <div className="tx-body flex flex-col gap-4">
+              <div className="tx-body flex flex-col gap-4 md:gap-2">
                 {row.body.map((para, j) => (
                   <p
                     key={j}
-                    className="text-[14px] md:text-[16px] leading-[1.85] text-brand-text"
+                    className="text-[14px] md:text-[16px] leading-[1.85] md:leading-[1.5] text-brand-text"
                   >
                     {para}
                   </p>
@@ -189,7 +201,7 @@ export default function ProcessSection() {
             <div
               className={`flex justify-center order-1 ${
                 row.reversed ? "md:order-1" : "md:order-2"
-              }`}
+              }${i === 2 ? " md:justify-start" : i === 3 ? " md:justify-end" : i === 4 ? " md:justify-start" : ""}`}
             >
               <Image
                 src={row.image}
@@ -198,13 +210,15 @@ export default function ProcessSection() {
                 height={row.imageH}
                 className={`w-full h-auto object-contain ${
   i === 0
-    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[520px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[688px]"
     : i === 1
-    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[528px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[634px]"
     : i === 2
-    ? "max-w-[300px] sm:max-w-[420px] md:max-w-[580px]"
+    ? "max-w-[300px] sm:max-w-[420px] md:w-[120%] md:max-w-none"
+    : i === 3
+    ? "max-w-[260px] sm:max-w-[340px] md:w-[120%] md:max-w-none"
     : i === 4
-    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[528px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:w-[120%] md:max-w-none"
     : "max-w-[260px] sm:max-w-[340px] md:max-w-[440px]"
 }`}
               />

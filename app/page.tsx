@@ -10,6 +10,7 @@ import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
 import MobileSite from "@/components/mobile/MobileSite";
 import CursorEffects from "@/components/CursorEffects";
+import ScrollParallax from "@/components/ScrollParallax";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
 
       {/* Desktop layout — hidden on mobile */}
       <CursorEffects />
+      <ScrollParallax />
       <div id="desktop-site" className="hidden md:block">
         <Navbar />
         <main>

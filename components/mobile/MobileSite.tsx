@@ -15,6 +15,7 @@ export default function MobileSite() {
       <div className="relative z-[2] bg-black" style={{ marginTop: 170 }}>
         <MobileCraft />
 
+        <div style={{ marginTop: -40 }}>
         <div>
           <MobileStoryRow
             bold="The Forest"
@@ -35,6 +36,7 @@ export default function MobileSite() {
           bold="Magic"
           light="The Brewmaster's"
           boldFirst={false}
+          offsetTop={-30}
           body={[
             "The gathered botanicals are handed to the women brewmasters.",
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster's accumulated experience.",
@@ -47,6 +49,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="Fire, Rice"
           light="and the restraint"
+          offsetTop={-30}
           imageScale={1.15}
           body={[
             "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
@@ -59,6 +62,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="Grain Boundary"
           light="Fermentation"
+          offsetTop={-30}
           imageScale={1.25}
           body={[
             "The gathered botanicals are handed to the women brewmasters.",
@@ -73,6 +77,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="A Rare Solid-State"
           light="Fermentation"
+          offsetTop={-30}
           body={[
             "This process resists massive scale by design.",
             "It depends on judgment rather than automation, and on time rather than speed.",
@@ -83,6 +88,7 @@ export default function MobileSite() {
 
         <MobileStoryRow
           bold="The Drawing"
+          offsetTop={-30}
           imageScale={1.15}
           imageOffsetY={-15}
           body={[
@@ -138,6 +144,7 @@ export default function MobileSite() {
         </div>
 
         <MobileMapBlock />
+        </div> {/* end -40 wrapper */}
       </div>
       <div style={{ marginTop: -40, position: "relative", zIndex: 3 }}>
         <MobileFooter />

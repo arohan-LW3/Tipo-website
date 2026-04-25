@@ -18,7 +18,7 @@ export default function StoryIntro() {
           </div>
 
           {/* Right — Text */}
-          <div className="flex flex-col gap-2">
+          <div data-parallax-text className="flex flex-col gap-2">
             <div className="flex flex-col gap-1 mt-5">
               <span className="tx-serif-bold text-[20px] uppercase tracking-[0.25em] text-[#D4922A]">
                 The Forest
@@ -27,17 +27,17 @@ export default function StoryIntro() {
                 &amp; the Herb collectors
               </h2>
             </div>
-            <div className="tx-body flex flex-col gap-2">
-              <p className="text-[16px] leading-[1.4] md:leading-[1.85] text-brand-text">
+            <div className="tx-body flex flex-col gap-2 md:gap-1">
+              <p className="text-[16px] md:text-[18px] leading-[1.4] text-brand-text md:text-brand-gold">
                 Each season begins in the forest at the foothills of the Himalayas.
               </p>
-              <p className="text-[16px] leading-[1.4] md:leading-[1.85] text-brand-text">
+              <p className="text-[16px] leading-[1.4] md:leading-[1.5] text-brand-text">
                 Women trained in botanical knowledge enter the surrounding landscape
                 to gather what the year allows. They collect with restraint,
                 selecting from more than sixty forest botanicals based on smell,
                 maturity, texture, and memory.
               </p>
-              <p className="text-[16px] leading-[1.4] md:leading-[1.85] text-brand-text">
+              <p className="text-[16px] leading-[1.4] md:leading-[1.5] text-brand-text">
                 The forest decides what is available.
                 <br />
                 The collectors decide what should be taken and what should be left

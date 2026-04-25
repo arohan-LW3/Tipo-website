@@ -17,7 +17,7 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div className="flex flex-col gap-4 w-full md:max-w-[480px] pb-10 md:pt-10 md:-mt-10">
+          <div data-parallax-text className="flex flex-col gap-4 md:gap-2 w-full md:max-w-[480px] pb-10 md:pt-10 md:mt-[2.5px]">
             <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
               <span className="tx-eyebrow block">Technology is the valet,</span>
               <span className="tx-tracked-light block">not the star.</span>
@@ -27,13 +27,13 @@ export default function CellarSection() {
               <br />
               Po:ro Apong.
             </p>
-            <div className="tx-body flex flex-col gap-4">
-              <p className="text-[16px] leading-[1.4] md:leading-[1.8] text-brand-text">
+            <div className="tx-body flex flex-col gap-4 md:gap-2">
+              <p className="text-[16px] leading-[1.4] md:leading-[1.5] text-brand-text">
                 Our role is deliberately modest: introduce hygiene, scientific
                 filtration, and clean bottling in modern winery setting so the
                 Po:ro Apong can travel without altering its character.
               </p>
-              <p className="text-[16px] leading-[1.4] md:leading-[1.8] text-brand-text">
+              <p className="text-[16px] leading-[1.4] md:leading-[1.5] text-brand-text">
                 This quiet preservation is overseen by Ajoy Shaw, DipWSET, our
                 Chief Winemaker, ensuring what reaches you is what was made at
                 the source: the Brahmaputra Valley, kept pristine in glass.

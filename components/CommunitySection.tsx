@@ -16,7 +16,7 @@ export default function CommunitySection() {
         </div>
 
         {/* Right — Text (shown first on mobile) */}
-        <div className="flex flex-col gap-4 order-2 md:order-2 w-full md:max-w-[480px] md:py-20">
+        <div data-parallax-text className="flex flex-col gap-4 order-2 md:order-2 w-full md:max-w-[480px] md:py-20">
           <h2 className="text-xl md:text-2xl leading-snug text-[#D4922A]">
             <span className="tx-eyebrow block">Value lives</span>
             <span className="tx-tracked-light block">in the system</span>
