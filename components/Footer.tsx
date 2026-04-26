@@ -27,19 +27,19 @@ export default function Footer() {
     { title: "Connect", links: connectLinks },
   ];
 
-  const bodyLine = "tx-body text-[14.4px] leading-[1.6] text-[#C8C8C8]";
+  const bodyLine = "tx-body text-[clamp(14px,0.97vw,20px)] leading-[1.6] text-[#C8C8C8]";
 
   return (
     <footer
       id="contact"
-      className="py-10 px-6 md:py-[60px] md:px-16 lg:px-24 no-magnify"
+      className="py-10 px-6 md:py-[clamp(60px,4.2vw,100px)] md:px-[clamp(64px,5.5vw,120px)] no-magnify"
       style={{
         background:
           "linear-gradient(135deg, #2e2e2e 0%, #242424 35%, #171717 70%, #0e0e0e 100%)",
       }}
     >
       {/* 4 columns on desktop, 2-col grid on mobile (brand spans full width) */}
-      <div className="max-w-6xl mx-auto grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
+      <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto grid grid-cols-2 gap-x-6 gap-y-10 items-start w-full md:flex md:flex-wrap md:justify-between">
         {/* Column 1 — Brand */}
         <div className="flex flex-col col-span-2 md:col-span-1">
           <img
@@ -47,7 +47,7 @@ export default function Footer() {
             alt="TI:PO Po:Ro Apong logo"
             className="h-6 w-auto object-contain mb-3 self-start"
           />
-          <p className="tx-serif-light text-[14.4px] leading-[1.6] text-[#C8C8C8]">
+          <p className="tx-serif-light text-[clamp(14px,0.97vw,20px)] leading-[1.6] text-[#C8C8C8]">
             Po:Ro Apong
           </p>
           <p className={bodyLine}>Handcrafted by Women</p>
@@ -67,7 +67,7 @@ export default function Footer() {
               (title === "Connect" ? " col-span-2 md:col-span-1" : "")
             }
           >
-            <h4 className="tx-eyebrow uppercase text-[14.4px] mb-3 text-[#D4922A]">
+            <h4 className="tx-eyebrow uppercase text-[clamp(14px,0.97vw,20px)] mb-3 text-[#D4922A]">
               {title}
             </h4>
             <ul
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="tx-body text-[14.4px] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300 border-b border-transparent md:hover:border-brand-gold pb-0.5"
+                    className="tx-body text-[clamp(14px,0.97vw,20px)] leading-[2] text-[#C8C8C8] hover:text-white transition-colors duration-300 border-b border-transparent md:hover:border-brand-gold pb-0.5"
                   >
                     {link.label}
                   </a>

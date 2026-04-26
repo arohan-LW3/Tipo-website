@@ -71,7 +71,7 @@ export default function HeroSection() {
       <a
         id="discover-btn"
         href="#the-craft"
-        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 z-[30] top-[calc(50svh-82px)] md:top-[calc(50svh+338px)] border border-brand-gold md:border-0"
+        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-150px)] border border-brand-gold md:border-0"
         style={{
           padding: "12px 22px",
           background: "rgba(0,0,0,0.78)",
@@ -119,7 +119,7 @@ export default function HeroSection() {
       </div>
 
       {/* Himalaya background with built-in shape divider cutout */}
-      <div id="the-craft" className="w-full relative z-20 -mt-[160px] overflow-hidden" style={{ minHeight: "61vw" }}>
+      <div id="the-craft" className="w-full relative z-20 -mt-[160px] overflow-hidden" style={{ minHeight: "clamp(700px, 61vw, 950px)" }}>
         {/* Himalaya new image — black cutout at top blends seamlessly with hero.
             Height capped at 90% of the wrapper so the image is vertically
             cropped from the bottom (top anchor preserved for bottle blend). */}
@@ -143,36 +143,36 @@ export default function HeroSection() {
             pl values match Discover's left offsets so text shares the
             same vertical axis (x=180 mobile, x=80 desktop). */}
         <div data-parallax-text className="relative z-10 pt-10 md:pt-[280px] pb-10 md:pb-52">
-          <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20">
-          <div className="max-w-[420px] text-left">
+          <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
+          <div className="max-w-[clamp(420px,29.2vw,600px)] text-left">
             {/* THE CRAFT label */}
             <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-3">
               The Craft
             </span>
 
             {/* Subtitle — descriptive line */}
-            <p className="tx-serif-light text-brand-gold text-[18px] md:text-[22px] lg:text-[24px] leading-[1.15] mb-0">
+            <p className="tx-serif-light text-brand-gold text-[18px] md:text-[clamp(22px,1.67vw,36px)] leading-[1.15] mb-0">
               Born at the Foothills of the
             </p>
 
             {/* Main heading — emphasized phrase */}
-            <h1 className="tx-heading text-brand-gold text-[18px] md:text-[22px] lg:text-[24px] uppercase leading-[1.15] mb-6 md:mb-3">
+            <h1 className="tx-heading text-brand-gold text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15] mb-6 md:mb-3">
               Eastern Himalayas
             </h1>
 
             {/* Intro paragraphs */}
             <div className="tx-body flex flex-col gap-4 md:gap-2 max-w-[420px]">
-              <p className="text-[16px] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.
               </p>
-              <p className="text-[16px] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
                 From this landscape emerges a living library of
                 flavour&mdash;60+ forest botanicals, each shaped by soil,
                 climate and time. Herbs are gathered from the mountains; rice rises
                 from the river&apos;s alluvial fields.
               </p>
-              <p className="text-[16px] leading-[1.55] md:leading-[1.5] text-brand-text">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.5] text-brand-text">
                 Every year the valley resets
                 itself&mdash;flood, monsoon, heat and generous
                 humidity&mdash;creating one of India&apos;s richest biodiversities.

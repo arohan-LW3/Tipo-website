@@ -113,11 +113,11 @@ const rows: ProcessRow[] = [
 export default function ProcessSection() {
   return (
     <section className="bg-brand-black py-12 md:py-10">
-      <div className="max-w-6xl mx-auto px-10 md:px-16 lg:px-20 flex flex-col gap-20 md:gap-28">
+      <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)] flex flex-col gap-20 md:gap-[clamp(112px,7.8vw,200px)]">
         {rows.map((row, i) => (
           <div
             key={i}
-            className={`grid grid-cols-1 gap-x-16 gap-y-6 items-center ${
+            className={`grid grid-cols-1 gap-x-8 md:gap-x-[clamp(40px,3vw,80px)] gap-y-6 items-center ${
   i === 0
     ? "md:grid-cols-[2fr_3fr]"
     : i === 1
@@ -136,13 +136,13 @@ export default function ProcessSection() {
               data-parallax-text
               className={`flex flex-col gap-4 md:gap-2 order-2 ${
                 row.reversed ? "md:order-2" : "md:order-1"
-              } ${row.largeText ? "md:py-5 w-full md:max-w-[480px]" : ""}${
+              } ${row.largeText ? "md:py-5 w-full md:max-w-[clamp(480px,33.3vw,680px)]" : ""}${
     i === 0 ? " mt-0 md:mt-[25px]" : ""}${
     i === 2 ? " md:ml-6" : ""
   }`}
             >
               <h2
-                className={`text-xl md:text-2xl leading-snug text-[#D4922A] ${
+                className={`text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#D4922A] ${
                   row.stacked ? "" : "whitespace-nowrap"
                 }`}
               >
@@ -170,7 +170,7 @@ export default function ProcessSection() {
               {row.highlight && (
                 <p
                   className={`tx-serif-light leading-[1.4] text-[#D4922A] ${
-                    row.largeText ? "text-[16px]" : "text-[14px]"
+                    row.largeText ? "md:text-[clamp(16px,1.11vw,22px)]" : "text-[14px]"
                   }`}
                 >
                   {row.highlight}
@@ -180,7 +180,7 @@ export default function ProcessSection() {
                 {row.body.map((para, j) => (
                   <p
                     key={j}
-                    className="text-[14px] md:text-[16px] leading-[1.85] md:leading-[1.5] text-brand-text"
+                    className="text-[14px] md:text-[clamp(16px,1.11vw,22px)] leading-[1.85] md:leading-[1.5] text-brand-text"
                   >
                     {para}
                   </p>
@@ -189,7 +189,7 @@ export default function ProcessSection() {
               {row.pullQuote && (
                 <div className="tx-serif-bold flex flex-col gap-1 text-brand-text mt-2">
                   {row.pullQuote.map((line, k) => (
-                    <p key={k} className="text-[16px] leading-[1.4]">
+                    <p key={k} className="text-[clamp(16px,1.11vw,22px)] leading-[1.4]">
                       {line}
                     </p>
                   ))}
@@ -210,9 +210,9 @@ export default function ProcessSection() {
                 height={row.imageH}
                 className={`w-full h-auto object-contain ${
   i === 0
-    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[688px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[clamp(688px,48vw,900px)]"
     : i === 1
-    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[634px]"
+    ? "max-w-[280px] sm:max-w-[380px] md:max-w-[clamp(634px,44vw,850px)]"
     : i === 2
     ? "max-w-[300px] sm:max-w-[420px] md:w-[120%] md:max-w-none"
     : i === 3
