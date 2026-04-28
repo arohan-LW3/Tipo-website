@@ -12,7 +12,7 @@ export default function MobileSite() {
       <MobileNavbar />
       <MobileHero />
       {/* Wrapper slides up over the sticky hero for a parallax reveal */}
-      <div className="relative z-[2] bg-black" style={{ marginTop: 170 }}>
+      <div className="relative z-[2] bg-black" style={{ marginTop: 0 }}>
         <MobileCraft />
 
         <div style={{ marginTop: -40 }}>
@@ -20,7 +20,7 @@ export default function MobileSite() {
           <MobileStoryRow
             bold="The Forest"
             light="& the Herb collectors"
-            imageOffsetY={-40}
+            imageOffsetY={0}
             boldFirst
             body={[
               "Each season begins in the forest at the foothills of the Himalayas.",
@@ -50,7 +50,7 @@ export default function MobileSite() {
           bold="Fire, Rice"
           light="and the restraint"
           offsetTop={-30}
-          imageScale={1.15}
+          imageScale={1.0}
           body={[
             "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
             "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
@@ -63,7 +63,7 @@ export default function MobileSite() {
           bold="Grain Boundary"
           light="Fermentation"
           offsetTop={-30}
-          imageScale={1.25}
+          imageScale={1.0}
           body={[
             "The gathered botanicals are handed to the women brewmasters.",
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster’s accumulated experience.",
@@ -78,6 +78,7 @@ export default function MobileSite() {
           bold="A Rare Solid-State"
           light="Fermentation"
           offsetTop={-30}
+          imageGap={14}
           body={[
             "This process resists massive scale by design.",
             "It depends on judgment rather than automation, and on time rather than speed.",
@@ -89,8 +90,8 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="The Drawing"
           offsetTop={-30}
-          imageScale={1.15}
-          imageOffsetY={-15}
+          imageScale={1.0}
+          imageOffsetY={0}
           body={[
             "In the traditional method, when fermentation is complete, the wine is gently drawn from the grain. What emerges reflects the forest, the season, and the decisions made during that cycle.",
             "Each batch is distinct. Variation is not corrected; it is accepted as truth.",
@@ -101,6 +102,7 @@ export default function MobileSite() {
         />
 
         <MobileStoryRow
+          offsetTop={-30}
           bold="Technology is the valet,"
           light="not the star."
           imageContainerStyle={{ aspectRatio: "4/3", height: "auto" }}
@@ -113,11 +115,11 @@ export default function MobileSite() {
           imageAlt="Traditional winery with worker overseeing the process"
         />
 
-        <div style={{ marginTop: 60 }}>
+        <div style={{ marginTop: 32 }}>
           <MobileVideoBlock />
         </div>
 
-        <div style={{ marginTop: 80 }}>
+        <div style={{ marginTop: 32 }}>
         <MobileStoryRow
           id="heritage"
           bold="It takes a village,"
@@ -132,6 +134,7 @@ export default function MobileSite() {
         />
 
         <MobileStoryRow
+          offsetTop={-30}
           bold="Value lives"
           light="in the system"
           body={[

@@ -2,6 +2,20 @@
 
 import { useState } from "react";
 
+const linkMap: Record<string, { href: string; target?: string }> = {
+  "The Craft": { href: "#the-craft" },
+  "The Women": { href: "#heritage" },
+  "Instagram": { href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
+  "YouTube": { href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
+  "Contact": { href: "#contact" },
+  "info@heritagetipo.com": {
+    href: "https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com",
+    target: "_blank",
+  },
+};
+
+const experienceLinks = ["Visit TI:PO", "For Restaurants", "Shop", "Stockist Finder"];
+
 export default function MobileFooter() {
   const cols = [
     {
@@ -10,12 +24,13 @@ export default function MobileFooter() {
     },
     {
       title: "Experience",
-      links: ["Visit TI:PO", "For Restaurants", "Shop", "Stockist Finder"],
+      links: experienceLinks,
     },
     { title: "Connect", links: ["Instagram", "YouTube", "Contact", "Press Kit"] },
   ];
 
   const [open, setOpen] = useState<string | null>(null);
+  const [comingSoonLink, setComingSoonLink] = useState<string | null>(null);
 
   return (
     <footer
@@ -64,25 +79,46 @@ export default function MobileFooter() {
               </button>
               <div
                 className="overflow-hidden transition-all duration-300"
-                style={{ maxHeight: open === col.title ? 300 : 0, opacity: open === col.title ? 1 : 0 }}
+                style={{ maxHeight: open === col.title ? 400 : 0, opacity: open === col.title ? 1 : 0 }}
               >
                 <ul className="list-none p-0 mt-0 mb-4 flex flex-col">
-                  {col.links.map((l) => (
-                    <li key={l}>
-                      <a
-                        href="#"
-                        className="tx-body font-light text-[13px] leading-[2.2] text-[#C8C8C8] no-underline hover:text-white transition-colors"
-                      >
-                        {l}
-                      </a>
-                    </li>
-                  ))}
+                  {col.links.map((l) => {
+                    const isExperience = col.title === "Experience";
+                    const meta = linkMap[l];
+                    return (
+                      <li key={l} className="flex flex-col">
+                        <a
+                          href={isExperience ? undefined : (meta?.href ?? "#")}
+                          target={meta?.target}
+                          rel={meta?.target === "_blank" ? "noopener noreferrer" : undefined}
+                          onClick={isExperience ? (e) => {
+                            e.preventDefault();
+                            setComingSoonLink(comingSoonLink === l ? null : l);
+                          } : undefined}
+                          className="tx-body font-light text-[13px] leading-[2.2] text-[#C8C8C8] no-underline hover:text-white transition-colors cursor-pointer"
+                        >
+                          {l}
+                        </a>
+                        {isExperience && comingSoonLink === l && (
+                          <span className="inline-block self-start mb-2 px-3 py-1.5 text-[10px] uppercase tracking-[0.15em] text-brand-gold bg-[#111] border border-brand-gold/50 rounded-md whitespace-nowrap shadow-lg">
+                            Coming Soon
+                          </span>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {comingSoonLink && (
+        <div
+          className="fixed inset-0 z-[5]"
+          onClick={() => setComingSoonLink(null)}
+        />
+      )}
     </footer>
   );
 }

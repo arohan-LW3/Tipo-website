@@ -16,6 +16,7 @@ interface MobileStoryRowProps {
   imageScale?: number;
   imageOffsetY?: number;
   imageContainerStyle?: React.CSSProperties;
+  imageGap?: number;
 }
 
 export default function MobileStoryRow({
@@ -34,6 +35,7 @@ export default function MobileStoryRow({
   imageScale,
   imageOffsetY,
   imageContainerStyle,
+  imageGap,
 }: MobileStoryRowProps) {
   const BoldSpan = (
     <span className="block font-bold uppercase text-[20px] leading-[1.2] tracking-[0.18em]">
@@ -49,8 +51,8 @@ export default function MobileStoryRow({
   return (
     <div
       id={id}
-      className="py-14 px-6 flex flex-col gap-[30px]"
-      style={offsetTop !== undefined ? { marginTop: offsetTop } : undefined}
+      className="py-14 px-6 flex flex-col"
+      style={{ gap: imageGap ?? 30, ...(offsetTop !== undefined ? { marginTop: offsetTop } : {}) }}
     >
       <div className="w-full rounded-2xl overflow-hidden" style={{ borderRadius: 16, transform: `${imageScale ? `scale(${imageScale})` : ""}${imageOffsetY ? ` translateY(${imageOffsetY}px)` : ""}`.trim() || undefined, transformOrigin: "center center", ...imageContainerStyle }}>
         <Image

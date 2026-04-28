@@ -4,7 +4,7 @@ export default function MobileCraft() {
       id="the-craft"
       className="md:hidden relative w-full"
       style={{
-        minHeight: 600,
+        minHeight: 540,
         backgroundImage: "url('/tipo-main-website/images/Himalaya no cutout.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center 20%",
@@ -17,7 +17,7 @@ export default function MobileCraft() {
             "linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.55) 42%, rgba(0,0,0,0.95) 100%)",
         }}
       />
-      <div className="relative z-10 px-6 pt-40 pb-14">
+      <div className="relative z-10 px-6 pt-40 pb-0">
         <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-5">
           The Craft
         </span>

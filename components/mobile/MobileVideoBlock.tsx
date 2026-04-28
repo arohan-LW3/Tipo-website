@@ -1,6 +1,6 @@
 export default function MobileVideoBlock() {
   return (
-    <section className="py-14 px-6" style={{ background: "#1F2122" }}>
+    <section className="py-8 px-6" style={{ background: "#1F2122" }}>
       <div className="flex flex-col gap-5">
         <span className="tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase">
           Witness the Process

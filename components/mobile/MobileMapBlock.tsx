@@ -79,9 +79,21 @@ export default function MobileMapBlock() {
           Contact &amp; Distribution
         </h3>
         <p className="tx-body-medium text-[12px] leading-[1.7] text-[#C8C8C8] mt-[10px]">
-          +91 88220 92973
+          <a
+            href="tel:+918822092973"
+            className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
+          >
+            +91 88220 92973
+          </a>
           <br />
-          info@heritagetipo.com
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#C8C8C8] no-underline hover:text-white transition-colors"
+          >
+            info@heritagetipo.com
+          </a>
         </p>
       </div>
       </div>

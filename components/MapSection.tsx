@@ -95,7 +95,13 @@ export default function MapSection() {
               Contact &amp; Distribution
             </h2>
             <p className="tx-body-medium text-[clamp(14px,0.97vw,20px)] leading-[1.4] md:leading-[1.8] text-[#C8C8C8]">
-              +91 88220 92973 &nbsp;|&nbsp;{" "}
+              <a
+                href="tel:+918822092973"
+                className="hover:text-white transition-colors duration-300"
+              >
+                +91 88220 92973
+              </a>{" "}
+              &nbsp;|&nbsp;{" "}
               <a
                 href="https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com"
                 target="_blank"
