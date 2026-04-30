@@ -68,6 +68,25 @@ body {
   background: var(--color-brand-gold);
 }
 
+/* DRL glow for section labels */
+@keyframes glow-drl {
+  0%, 100% {
+    text-shadow:
+      0 0 6px rgba(212, 146, 42, 0.5),
+      0 0 14px rgba(212, 146, 42, 0.25);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(212, 146, 42, 0.9),
+      0 0 28px rgba(212, 146, 42, 0.55),
+      0 0 50px rgba(212, 146, 42, 0.2);
+  }
+}
+
+.animate-glow-drl {
+  animation: glow-drl 2.8s ease-in-out infinite;
+}
+
 /* Glowing pulse animation for Discover button */
 @keyframes glow-pulse {
   0%, 100% {

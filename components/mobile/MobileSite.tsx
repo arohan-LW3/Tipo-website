@@ -122,6 +122,9 @@ export default function MobileSite() {
         <div style={{ marginTop: 32 }}>
         <MobileStoryRow
           id="heritage"
+          eyebrow="The Team"
+          glowEyebrow
+          eyebrowAboveImage
           bold="It takes a village,"
           light="they say!"
           body={[

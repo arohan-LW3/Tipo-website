@@ -29,7 +29,7 @@ export default function MobileMapBlock() {
       </div>
 
       <Image
-        src="/tipo-main-website/images/map.webp"
+        src="/tipo-main-website/images/New map.webp"
         alt="Brahmaputra Valley origin"
         width={1200}
         height={600}

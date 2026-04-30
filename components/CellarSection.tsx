@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CellarSection() {
   return (
-    <section className="bg-brand-black py-[clamp(44px,3vw,80px)]">
+    <section className="bg-brand-black pt-[clamp(44px,3vw,80px)] pb-[clamp(80px,7vw,140px)]">
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
         {/* Two-column 50/50: matches StoryIntro so the image renders identically sized */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-[clamp(40px,3vw,80px)] gap-y-12 items-start md:items-center">

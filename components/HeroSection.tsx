@@ -71,7 +71,7 @@ export default function HeroSection() {
       <a
         id="discover-btn"
         href="#the-craft"
-        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-150px)] border border-brand-gold md:border-0"
+        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-60px)] border border-brand-gold md:border-0"
         style={{
           padding: "12px 22px",
           background: "rgba(0,0,0,0.78)",
@@ -124,17 +124,19 @@ export default function HeroSection() {
             Height capped at 90% of the wrapper so the image is vertically
             cropped from the bottom (top anchor preserved for bottle blend). */}
         <div className="absolute top-[180px] inset-x-0 h-[calc(100%+80px)]">
+          <div className="no-magnify absolute inset-0 pointer-events-none">
           <Image
             src="/tipo-main-website/images/Himalaya no cutout.webp"
             alt="Eastern Himalayas"
             fill
             className="object-cover [object-position:center_35%]"
           />
+          </div>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.45) 20%, rgba(0,0,0,0.69) 45%, rgba(0,0,0,0.90) 70%, rgba(0,0,0,0.98) 100%)",
+                "linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.60) 20%, rgba(0,0,0,0.78) 45%, rgba(0,0,0,0.92) 70%, rgba(0,0,0,0.98) 100%)",
             }}
           />
         </div>
@@ -146,7 +148,7 @@ export default function HeroSection() {
           <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
           <div className="max-w-[clamp(420px,29.2vw,600px)] text-left">
             {/* THE CRAFT label */}
-            <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-3">
+            <span className="animate-glow-drl tx-eyebrow block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-3">
               The Craft
             </span>
 

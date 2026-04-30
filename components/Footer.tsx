@@ -1,24 +1,22 @@
 export default function Footer() {
   const exploreLinks = [
-    { label: "The Origin", href: "#" },
     { label: "The Craft", href: "#the-craft" },
-    { label: "The Women", href: "#heritage" },
-    { label: "The Wine", href: "#" },
-    { label: "Chronicle", href: "#" },
+    { label: "The Team", href: "#heritage" },
+    { label: "The Wine", href: "/tipo-main-website/wine" },
   ];
 
   const experienceLinks = [
     { label: "Visit TI:PO", href: "#" },
     { label: "For Restaurants", href: "#" },
-    { label: "Shop", href: "#" },
     { label: "Stockist Finder", href: "#" },
   ];
 
   const connectLinks = [
     { label: "Instagram", href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
     { label: "YouTube", href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
+    { label: "Blogs", href: "https://link.heritagetipo.com/landing?v=2", target: "_blank" },
     { label: "Contact", href: "#contact" },
-    { label: "Press Kit", href: "#" },
+    { label: "Press Kit", href: "/tipo-main-website/press-kit" },
   ];
 
   const columns: { title: string; links: { label: string; href: string; target?: string }[] }[] = [

@@ -2,6 +2,8 @@ import Image from "next/image";
 
 interface MobileStoryRowProps {
   eyebrow?: string;
+  glowEyebrow?: boolean;
+  eyebrowAboveImage?: boolean;
   bold: string;
   light?: string;
   boldFirst?: boolean;
@@ -21,6 +23,8 @@ interface MobileStoryRowProps {
 
 export default function MobileStoryRow({
   eyebrow,
+  glowEyebrow,
+  eyebrowAboveImage,
   bold,
   light,
   boldFirst = true,
@@ -54,6 +58,11 @@ export default function MobileStoryRow({
       className="py-14 px-6 flex flex-col"
       style={{ gap: imageGap ?? 30, ...(offsetTop !== undefined ? { marginTop: offsetTop } : {}) }}
     >
+      {eyebrow && eyebrowAboveImage && (
+        <span className={`tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}`}>
+          {eyebrow}
+        </span>
+      )}
       <div className="w-full rounded-2xl overflow-hidden" style={{ borderRadius: 16, transform: `${imageScale ? `scale(${imageScale})` : ""}${imageOffsetY ? ` translateY(${imageOffsetY}px)` : ""}`.trim() || undefined, transformOrigin: "center center", ...imageContainerStyle }}>
         <Image
           src={image}
@@ -65,8 +74,8 @@ export default function MobileStoryRow({
         />
       </div>
       <div className="flex flex-col gap-3">
-        {eyebrow && (
-          <span className="tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase">
+        {eyebrow && !eyebrowAboveImage && (
+          <span className={`tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}`}>
             {eyebrow}
           </span>
         )}

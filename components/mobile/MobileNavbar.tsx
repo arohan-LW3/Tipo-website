@@ -8,7 +8,7 @@ export default function MobileNavbar() {
 
   const links = [
     { label: "The Craft", href: "#the-craft" },
-    { label: "The Women", href: "#heritage" },
+    { label: "The Team", href: "#heritage" },
     { label: "The Contact", href: "#contact" },
   ];
 

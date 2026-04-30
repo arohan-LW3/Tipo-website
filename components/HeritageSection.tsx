@@ -2,8 +2,15 @@ import Image from "next/image";
 
 export default function HeritageSection() {
   return (
-    <section id="heritage" className="bg-brand-black py-[clamp(44px,3vw,80px)] scroll-mt-20">
+    <section id="heritage" className="bg-brand-black pt-[clamp(80px,7vw,140px)] pb-[clamp(44px,3vw,80px)] scroll-mt-20">
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
+        {/* Eyebrow label */}
+        <div className="mb-8">
+          <span className="animate-glow-drl tx-serif-bold text-[clamp(14px,0.97vw,20px)] uppercase tracking-[0.25em] text-[#D4922A] inline-block border-b border-transparent hover:border-[#D4922A] transition-colors duration-300 cursor-default pb-0.5">
+            The Team
+          </span>
+        </div>
+
         {/* Two-column */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-[clamp(40px,3vw,80px)] gap-y-12 items-start md:items-center">
           {/* Left — Text */}

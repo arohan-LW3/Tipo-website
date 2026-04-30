@@ -4,9 +4,12 @@ import { useState } from "react";
 
 const linkMap: Record<string, { href: string; target?: string }> = {
   "The Craft": { href: "#the-craft" },
-  "The Women": { href: "#heritage" },
+  "The Team": { href: "#heritage" },
+  "The Wine": { href: "/tipo-main-website/wine" },
+  "Press Kit": { href: "/tipo-main-website/press-kit" },
   "Instagram": { href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
   "YouTube": { href: "https://www.youtube.com/@TipoHeritage", target: "_blank" },
+  "Blogs": { href: "https://link.heritagetipo.com/landing?v=2", target: "_blank" },
   "Contact": { href: "#contact" },
   "info@heritagetipo.com": {
     href: "https://mail.google.com/mail/?view=cm&to=info@heritagetipo.com",
@@ -14,19 +17,19 @@ const linkMap: Record<string, { href: string; target?: string }> = {
   },
 };
 
-const experienceLinks = ["Visit TI:PO", "For Restaurants", "Shop", "Stockist Finder"];
+const experienceLinks = ["Visit TI:PO", "For Restaurants", "Stockist Finder"];
 
 export default function MobileFooter() {
   const cols = [
     {
       title: "Explore",
-      links: ["The Origin", "The Craft", "The Women", "The Wine", "Chronicle"],
+      links: ["The Craft", "The Team", "The Wine"],
     },
     {
       title: "Experience",
       links: experienceLinks,
     },
-    { title: "Connect", links: ["Instagram", "YouTube", "Contact", "Press Kit"] },
+    { title: "Connect", links: ["Instagram", "YouTube", "Blogs", "Contact", "Press Kit"] },
   ];
 
   const [open, setOpen] = useState<string | null>(null);

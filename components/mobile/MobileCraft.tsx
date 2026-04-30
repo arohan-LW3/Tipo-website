@@ -18,7 +18,7 @@ export default function MobileCraft() {
         }}
       />
       <div className="relative z-10 px-6 pt-40 pb-0">
-        <span className="tx-serif-light block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-5">
+        <span className="animate-glow-drl tx-eyebrow block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-5">
           The Craft
         </span>
         <p className="tx-serif-light text-brand-gold text-[22px] leading-[1.2] m-0">

@@ -50,7 +50,7 @@ export default function Navbar() {
 
   const links = [
     { label: "The Craft", href: "#the-craft" },
-    { label: "The Women", href: "#heritage" },
+    { label: "The Team", href: "#heritage" },
     { label: "The Contact", href: "#contact" },
   ];
 
@@ -83,7 +83,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={
                   link.label === "The Craft" ? scrollToParallax :
-                  link.label === "The Women" ? (e) => { e.preventDefault(); scrollToSection("heritage"); } :
+                  link.label === "The Team" ? (e) => { e.preventDefault(); scrollToSection("heritage"); } :
                   (e) => { e.preventDefault(); scrollToSection("contact"); }
                 }
                 className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
