@@ -50,11 +50,6 @@ export default function Footer() {
           </p>
           <p className={bodyLine}>Handcrafted by Women</p>
           <p className={bodyLine}>Traditional Indian Rice Wine</p>
-          <p className={`${bodyLine} mt-5`}>
-            From the Brahmaputra Valley,
-            <br />
-            Assam, India
-          </p>
         </div>
 
         {columns.map(({ title, links }) => (

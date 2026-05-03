@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const linkMap: Record<string, { href: string; target?: string }> = {
-  "The Craft": { href: "#the-craft" },
-  "The Team": { href: "#heritage" },
+  "The Craft": { href: "#mobile-the-craft" },
+  "The Team": { href: "#mobile-heritage" },
   "The Wine": { href: "/tipo-main-website/wine" },
   "Press Kit": { href: "/tipo-main-website/press-kit" },
   "Instagram": { href: "https://www.instagram.com/tipo.heritage", target: "_blank" },
@@ -57,9 +57,6 @@ export default function MobileFooter() {
           <p className="tx-serif-light text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Po:Ro Apong</p>
           <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Handcrafted by Women</p>
           <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Traditional Indian Rice Wine</p>
-          <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] mt-4 mb-0">
-            From the Brahmaputra Valley,<br />Assam, India
-          </p>
         </div>
 
         {/* Accordion */}

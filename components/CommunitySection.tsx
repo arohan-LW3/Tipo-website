@@ -16,12 +16,16 @@ export default function CommunitySection() {
         </div>
 
         {/* Right — Text (shown first on mobile) */}
-        <div data-parallax-text className="flex flex-col gap-2 order-2 md:order-2 w-full md:max-w-[clamp(480px,33.3vw,680px)] md:self-center md:-mt-8">
+        <div data-parallax-text className="flex flex-col gap-2 md:gap-6 order-2 md:order-2 w-full md:max-w-[clamp(480px,33.3vw,680px)] md:self-center md:-mt-8">
           <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#D4922A]">
             <span className="tx-eyebrow block">Value lives</span>
             <span className="tx-tracked-light block">in the system</span>
           </h2>
-          <div className="tx-body flex flex-col gap-2">
+          <div className="tx-body flex flex-col gap-2 md:gap-6">
+            <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.2] md:leading-[1.25] text-brand-text">
+              Tipo rests on seasonal botanicals, forest judgment, and women trained through long
+              apprenticeship — a living system that cannot be rushed or flattened.
+            </p>
             <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.2] md:leading-[1.25] text-brand-text">
               To keep it intact, we spent two years selecting and partnering
               with two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG

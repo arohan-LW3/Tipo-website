@@ -52,8 +52,9 @@ export default function MobileSite() {
           offsetTop={-30}
           imageScale={1.0}
           body={[
-            "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
-            "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
+            "Before fermentation, rice husk is burned to a precise point — ember-brown, never carbonized. This is not ritual for symbolism; it is technical discipline. Too much burn overwhelms the wine. Too little leaves it incomplete.",
+            "Steamed rice is combined with the starter cake and smoked husk in proportions set by the brewmaster. From this moment onward, the process is left largely undisturbed.",
+            "Control gives way to observation.",
           ]}
           image="/tipo-main-website/images/latest mandala 1.webp"
           imageAlt="Intricate circular mandala illustration of rice and botanicals"
@@ -65,10 +66,9 @@ export default function MobileSite() {
           offsetTop={-30}
           imageScale={1.0}
           body={[
-            "The gathered botanicals are handed to the women brewmasters.",
-            "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster’s accumulated experience.",
-            "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
-            "This starter does not impose flavor. It invites fermentation — recruiting native yeasts and microbes specific to this place.",
+            "“Every grain becomes its own cellar.”",
+            "Coated first with Epob, then with finely burnt husk, each grain of rice turns into a micro chamber of fermentation. But the true magic lies at the boundary — not within the grain, not outside it, but at the delicate meeting line where rice, starter, and husk touch.",
+            "At this razor-thin interface, alcohol is born droplet by droplet, giving Po:ro Apong its rare depth, texture, and character.",
           ]}
           image="/tipo-main-website/images/latest new-grain-boundary 1.webp"
           imageAlt="Oval illustration representing the grain boundary fermentation process"
@@ -80,6 +80,9 @@ export default function MobileSite() {
           offsetTop={-30}
           imageGap={14}
           body={[
+            "Po:ro Apong ferments in solid state, not liquid.",
+            "Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
+            "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary.",
             "This process resists massive scale by design.",
             "It depends on judgment rather than automation, and on time rather than speed.",
           ]}
@@ -121,9 +124,10 @@ export default function MobileSite() {
 
         <div style={{ marginTop: 32 }}>
         <MobileStoryRow
-          id="heritage"
+          id="mobile-heritage"
           eyebrow="The Team"
           glowEyebrow
+          underlineEyebrow
           eyebrowAboveImage
           bold="It takes a village,"
           light="they say!"
@@ -141,6 +145,7 @@ export default function MobileSite() {
           bold="Value lives"
           light="in the system"
           body={[
+            "Tipo rests on seasonal botanicals, forest judgment, and women trained through long apprenticeship — a living system that cannot be rushed or flattened.",
             "To keep it intact, we spent two years selecting and partnering with two Self Help Groups: Polo SHG (Leimekuri) and Aaradha SHG (Memberchuk), who are now part of the supply chain.",
             "The tradition stays with its rightful owners: the women brewmasters remain in control; we didn't outsource heritage, we safeguarded it.",
           ]}

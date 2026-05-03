@@ -71,7 +71,7 @@ export default function HeroSection() {
       <a
         id="discover-btn"
         href="#the-craft"
-        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-60px)] border border-brand-gold md:border-0"
+        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 md:left-[calc((100vw-clamp(1152px,75vw,1800px))/2+clamp(64px,5.5vw,120px))] md:translate-x-0 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-140px)] border border-brand-gold md:border-0"
         style={{
           padding: "12px 22px",
           background: "rgba(0,0,0,0.78)",
@@ -148,7 +148,7 @@ export default function HeroSection() {
           <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
           <div className="max-w-[clamp(420px,29.2vw,600px)] text-left">
             {/* THE CRAFT label */}
-            <span className="animate-glow-drl tx-eyebrow block text-[11px] uppercase tracking-[0.3em] text-brand-gold mb-3">
+            <span className="animate-glow-drl tx-eyebrow inline-block text-[11px] uppercase tracking-[0.3em] text-brand-gold border-b border-[#D4922A] pb-0.5 mb-3 md:mb-[45px]">
               The Craft
             </span>
 
@@ -158,12 +158,12 @@ export default function HeroSection() {
             </p>
 
             {/* Main heading — emphasized phrase */}
-            <h1 className="tx-heading text-brand-gold text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15] mb-6 md:mb-3">
+            <h1 className="tx-heading text-brand-gold text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15] mb-6 md:mb-6">
               Eastern Himalayas
             </h1>
 
             {/* Intro paragraphs */}
-            <div className="tx-body flex flex-col gap-4 md:gap-2 max-w-[420px]">
+            <div className="tx-body flex flex-col gap-4 md:gap-6 max-w-[420px]">
               <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.25] text-brand-text">
                 Po:ro Apong is born where the Eastern Himalayan foothills spill into
                 Assam&apos;s Brahmaputra Valley.
@@ -178,6 +178,12 @@ export default function HeroSection() {
                 Every year the valley resets
                 itself&mdash;flood, monsoon, heat and generous
                 humidity&mdash;creating one of India&apos;s richest biodiversities.
+              </p>
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.55] md:leading-[1.25] text-brand-text">
+                Together, these forces compose a natural signature that cannot be replicated
+                elsewhere: the Brahmaputra written into aroma and taste. For generations, the
+                Mising community has lived to the river&apos;s rhythm, turning landscape into
+                language&mdash;and language into Po:ro Apong.
               </p>
             </div>
           </div>

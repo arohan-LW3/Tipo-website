@@ -20,7 +20,7 @@ export default function StoryIntro() {
           </div>
 
           {/* Right — Text */}
-          <div data-parallax-text className="flex flex-col gap-2">
+          <div data-parallax-text className="flex flex-col gap-2 md:gap-6">
             <div className="flex flex-col gap-1 mt-5">
               <span className="tx-serif-bold text-[20px] uppercase tracking-[0.25em] text-[#D4922A]">
                 The Forest
@@ -29,8 +29,8 @@ export default function StoryIntro() {
                 &amp; the Herb collectors
               </h2>
             </div>
-            <div className="tx-body flex flex-col gap-2 md:gap-1">
-              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.4] text-brand-text md:text-brand-gold">
+            <div className="tx-body flex flex-col gap-2 md:gap-6">
+              <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.4] text-brand-text">
                 Each season begins in the forest at the foothills of the Himalayas.
               </p>
               <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.2] md:leading-[1.25] text-brand-text">

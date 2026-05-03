@@ -7,8 +7,8 @@ export default function MobileNavbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { label: "The Craft", href: "#the-craft" },
-    { label: "The Team", href: "#heritage" },
+    { label: "The Craft", href: "#mobile-the-craft" },
+    { label: "The Team", href: "#mobile-heritage" },
     { label: "The Contact", href: "#contact" },
   ];
 

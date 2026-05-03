@@ -19,7 +19,7 @@ export default function CellarSection() {
           </div>
 
           {/* Right — text */}
-          <div data-parallax-text className="flex flex-col gap-4 md:gap-2 w-full md:max-w-[clamp(480px,33.3vw,680px)] pb-10 md:pt-10 md:mt-[2.5px]">
+          <div data-parallax-text className="flex flex-col gap-4 md:gap-6 w-full md:max-w-[clamp(480px,33.3vw,680px)] pb-10 md:pt-10 md:mt-[2.5px]">
             <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#D4922A]">
               <span className="tx-eyebrow block">Technology is the valet,</span>
               <span className="tx-tracked-light block">not the star.</span>
@@ -29,7 +29,7 @@ export default function CellarSection() {
               <br />
               Po:ro Apong.
             </p>
-            <div className="tx-body flex flex-col gap-4 md:gap-2">
+            <div className="tx-body flex flex-col gap-4 md:gap-6">
               <p className="text-[clamp(16px,1.11vw,22px)] leading-[1.2] md:leading-[1.25] text-brand-text">
                 Our role is deliberately modest: introduce hygiene, scientific
                 filtration, and clean bottling in modern winery setting so the

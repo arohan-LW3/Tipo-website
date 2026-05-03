@@ -27,7 +27,7 @@ export default function MobileHero() {
 
   // Parallax + scroll lock + re-lock on return to top
   useEffect(() => {
-    if (window.innerWidth >= 768) return;
+    if (window.matchMedia("(min-width: 768px)").matches) return;
 
     const preventTouch = (e: TouchEvent) => {
       if (lockedRef.current) e.preventDefault();
@@ -65,7 +65,7 @@ export default function MobileHero() {
   const handleDiscover = (e: React.MouseEvent) => {
     e.preventDefault();
     lockedRef.current = false;
-    document.querySelector("#the-craft")?.scrollIntoView({ behavior: "smooth" });
+    document.querySelector("#mobile-the-craft")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -90,22 +90,22 @@ export default function MobileHero() {
 
       <a
         ref={ctaRef}
-        href="#the-craft"
+        href="#mobile-the-craft"
         onClick={handleDiscover}
         className="animate-glow absolute left-1/2 bottom-[48px] z-20 inline-flex items-center justify-center gap-3 no-underline"
         style={{
           transform: "translateX(-50%)",
-          minHeight: 50,
-          minWidth: 169,
-          padding: "13px 25px",
+          minHeight: 43,
+          minWidth: 144,
+          padding: "11px 21px",
           fontFamily: '"Mainlux", sans-serif',
           fontWeight: 300,
-          fontSize: "10pt",
+          fontSize: "8.5pt",
           letterSpacing: "0.25em",
           textTransform: "uppercase",
           color: "var(--color-brand-gold)",
           background: "rgba(0,0,0,0.78)",
-          border: "1px solid var(--color-brand-gold)",
+          border: "1px solid rgba(212,146,42,0.15)",
           borderRadius: 999,
           backdropFilter: "blur(6px)",
           WebkitBackdropFilter: "blur(6px)",

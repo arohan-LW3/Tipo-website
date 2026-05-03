@@ -47,8 +47,9 @@ const rows: ProcessRow[] = [
     label: "FIRE, RICE",
     heading: "and the restraint",
     body: [
-      "Po:ro Apong ferments in solid state, not liquid. Fermentation takes place in small batches, typically 5 to 7 kilograms, allowing close attention rather than mechanical intervention.",
-      "The ferment beds are not stirred or corrected. The brewmasters monitor progress by sight, scent, and time. Intervention is rare, and only when necessary. This process resists massive scale by design. It depends on judgment rather than automation, and on time rather than speed.",
+      "Before fermentation, rice husk is burned to a precise point — ember-brown, never carbonized. This is not ritual for symbolism; it is technical discipline. Too much burn overwhelms the wine. Too little leaves it incomplete.",
+      "Steamed rice is combined with the starter cake and smoked husk in proportions set by the brewmaster. From this moment onward, the process is left largely undisturbed.",
+      "Control gives way to observation.",
     ],
     image: "/tipo-main-website/images/latest mandala 1.webp",
     imageAlt: "Intricate circular mandala illustration of rice and botanicals",
@@ -58,16 +59,15 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldLabel: true,
     largeText: true,
-    bodyLeadings: ["leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]"],
+    bodyLeadings: ["leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]"],
   },
   {
     label: "Grain Boundary",
     heading: "Fermentation",
     body: [
-      "The gathered botanicals are handed to the women brewmasters.",
-      "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster\u2019s accumulated experience.",
-      "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
-      "This starter does not impose flavor. It invites fermentation \u2014 recruiting native yeasts and microbes specific to this place.",
+      "\u201cEvery grain becomes its own cellar.\u201d",
+      "Coated first with Epob, then with finely burnt husk, each grain of rice turns into a micro chamber of fermentation. But the true magic lies at the boundary \u2014 not within the grain, not outside it, but at the delicate meeting line where rice, starter, and husk touch.",
+      "At this razor-thin interface, alcohol is born droplet by droplet, giving Po:ro Apong its rare depth, texture, and character.",
     ],
     image: "/tipo-main-website/images/latest new-grain-boundary 1.webp",
     imageAlt: "Oval illustration representing the grain boundary fermentation process",
@@ -77,7 +77,7 @@ const rows: ProcessRow[] = [
     stacked: true,
     boldBoth: true,
     largeText: true,
-    bodyLeadings: ["leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]"],
+    bodyLeadings: ["leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]", "leading-[1.2] md:leading-[1.25]"],
   },
   {
     label: "A RARE SOLID-STATE",
@@ -141,7 +141,7 @@ export default function ProcessSection() {
             {/* Text */}
             <div
               data-parallax-text
-              className={`flex flex-col gap-4 md:gap-2 order-2 ${
+              className={`flex flex-col gap-4 md:gap-6 order-2 ${
                 row.reversed ? "md:order-2" : "md:order-1"
               } ${row.largeText ? `${i !== 1 && i !== 2 && i !== 3 && i !== 4 ? "md:py-5 " : ""}w-full md:max-w-[clamp(480px,33.3vw,680px)]` : ""}${
     i === 0 ? " mt-0" : ""}${
@@ -183,7 +183,7 @@ export default function ProcessSection() {
                   {row.highlight}
                 </p>
               )}
-              <div className="tx-body flex flex-col gap-4 md:gap-2">
+              <div className="tx-body flex flex-col gap-4 md:gap-6">
                 {row.body.map((para, j) => (
                   <p
                     key={j}

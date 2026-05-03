@@ -4,6 +4,7 @@ interface MobileStoryRowProps {
   eyebrow?: string;
   glowEyebrow?: boolean;
   eyebrowAboveImage?: boolean;
+  underlineEyebrow?: boolean;
   bold: string;
   light?: string;
   boldFirst?: boolean;
@@ -25,6 +26,7 @@ export default function MobileStoryRow({
   eyebrow,
   glowEyebrow,
   eyebrowAboveImage,
+  underlineEyebrow,
   bold,
   light,
   boldFirst = true,
@@ -59,7 +61,7 @@ export default function MobileStoryRow({
       style={{ gap: imageGap ?? 30, ...(offsetTop !== undefined ? { marginTop: offsetTop } : {}) }}
     >
       {eyebrow && eyebrowAboveImage && (
-        <span className={`tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}`}>
+        <span className={`tx-eyebrow inline-block self-start text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}${underlineEyebrow ? " border-b border-brand-gold pb-0.5" : ""}`}>
           {eyebrow}
         </span>
       )}
@@ -75,7 +77,7 @@ export default function MobileStoryRow({
       </div>
       <div className="flex flex-col gap-3">
         {eyebrow && !eyebrowAboveImage && (
-          <span className={`tx-eyebrow block text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}`}>
+          <span className={`tx-eyebrow inline-block text-[12px] tracking-[0.25em] text-brand-gold uppercase${glowEyebrow ? " animate-glow-drl" : ""}${underlineEyebrow ? " border-b border-brand-gold pb-0.5" : ""}`}>
             {eyebrow}
           </span>
         )}
@@ -92,11 +94,11 @@ export default function MobileStoryRow({
             </>
           )}
         </h2>
-        <div className="tx-body flex flex-col gap-3 mt-1">
+        <div className="tx-body flex flex-col gap-[18px] mt-1">
           {body.map((p, i) => (
             <p
               key={i}
-              className="text-[14px] leading-[1.8] text-brand-text m-0"
+              className="text-[14px] leading-[1] text-brand-text m-0"
             >
               {p}
             </p>
