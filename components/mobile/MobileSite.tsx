@@ -41,6 +41,7 @@ export default function MobileSite() {
             "The gathered botanicals are handed to the women brewmasters.",
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster's accumulated experience.",
             "The botanicals are dried, ground, and combined with rice flour to form e-pob, the traditional starter cake.",
+            "This starter does not impose flavor. It invites fermentation — recruiting native yeasts and microbes specific to this place.",
           ]}
           image="/tipo-main-website/images/latest brewmaster 1.webp"
           imageAlt="Illustration of a brewmaster figure in traditional clothing with botanicals"
@@ -134,6 +135,7 @@ export default function MobileSite() {
           body={[
             "Po:ro Apong is made by women, and it has always been so. Knowledge is passed through apprenticeship, not instruction. Girls grow up assisting long before they are trusted to decide.",
             "Authority is not granted; it is recognized.",
+            "The role of the brewmaster is earned through time, judgment, and restraint. What exists is a lineage — a continuous chain of women who carry the responsibility of brewing the Po:ro Apong, season after season.",
             "This structure has preserved the craft not by freezing it in time, but by keeping it human.",
           ]}
           image="/tipo-main-website/images/it-takes-a-village.webp"
