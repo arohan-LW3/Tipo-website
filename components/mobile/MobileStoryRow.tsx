@@ -20,6 +20,7 @@ interface MobileStoryRowProps {
   imageOffsetY?: number;
   imageContainerStyle?: React.CSSProperties;
   imageGap?: number;
+  goldenLines?: number[];
 }
 
 export default function MobileStoryRow({
@@ -42,6 +43,7 @@ export default function MobileStoryRow({
   imageOffsetY,
   imageContainerStyle,
   imageGap,
+  goldenLines,
 }: MobileStoryRowProps) {
   const BoldSpan = (
     <span className="block font-bold uppercase text-[20px] leading-[1.2] tracking-[0.18em]">
@@ -98,7 +100,7 @@ export default function MobileStoryRow({
           {body.map((p, i) => (
             <p
               key={i}
-              className="text-[14px] leading-[1] text-brand-text m-0"
+              className={`text-[14px] leading-[1] m-0 ${goldenLines?.includes(i) ? "text-brand-gold" : "text-brand-text"}`}
             >
               {p}
             </p>

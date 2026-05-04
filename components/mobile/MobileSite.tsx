@@ -110,6 +110,7 @@ export default function MobileSite() {
           bold="Technology is the valet,"
           light="not the star."
           imageContainerStyle={{ aspectRatio: "4/3", height: "auto" }}
+          goldenLines={[0]}
           body={[
             "Tipo did not reinterpret Po:ro Apong.",
             "Our role is deliberately modest: introduce hygiene, scientific filtration, and clean bottling in modern winery setting so the Po:ro Apong can travel without altering its character.",
