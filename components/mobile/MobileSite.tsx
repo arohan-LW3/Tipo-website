@@ -36,7 +36,7 @@ export default function MobileSite() {
           bold="Magic"
           light="The Brewmaster's"
           boldFirst={false}
-          offsetTop={-30}
+          offsetTop={-24}
           body={[
             "The gathered botanicals are handed to the women brewmasters.",
             "There is no recipe to follow. Proportions are decided anew every season, based on climate, humidity, the character of the herbs, and the brewmaster's accumulated experience.",
@@ -50,7 +50,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="Fire, Rice"
           light="and the restraint"
-          offsetTop={-30}
+          offsetTop={-24}
           imageScale={1.0}
           body={[
             "Before fermentation, rice husk is burned to a precise point — ember-brown, never carbonized. This is not ritual for symbolism; it is technical discipline. Too much burn overwhelms the wine. Too little leaves it incomplete.",
@@ -64,7 +64,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="Grain Boundary"
           light="Fermentation"
-          offsetTop={-30}
+          offsetTop={-24}
           imageScale={1.0}
           body={[
             "“Every grain becomes its own cellar.”",
@@ -78,7 +78,7 @@ export default function MobileSite() {
         <MobileStoryRow
           bold="A Rare Solid-State"
           light="Fermentation"
-          offsetTop={-30}
+          offsetTop={-24}
           imageGap={14}
           body={[
             "Po:ro Apong ferments in solid state, not liquid.",
@@ -93,7 +93,7 @@ export default function MobileSite() {
 
         <MobileStoryRow
           bold="The Drawing"
-          offsetTop={-30}
+          offsetTop={-24}
           imageScale={1.0}
           imageOffsetY={0}
           body={[
@@ -106,7 +106,7 @@ export default function MobileSite() {
         />
 
         <MobileStoryRow
-          offsetTop={-30}
+          offsetTop={-24}
           bold="Technology is the valet,"
           light="not the star."
           imageContainerStyle={{ aspectRatio: "4/3", height: "auto" }}

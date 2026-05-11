@@ -4,37 +4,27 @@ import { useEffect } from "react";
 
 export default function HeroSection() {
 
-  useEffect(() => {
-    const discover = document.getElementById("discover-btn");
-    if (discover) {
-      const onClick = (e: Event) => {
-        e.preventDefault();
-        const start = window.scrollY;
-        // Scroll exactly one viewport height so the sticky video is fully covered by the Himalaya section
-        const end = window.innerHeight;
-        const distance = end - start;
-        const duration = 800;
-        const startTime = performance.now();
-        // easeInOutQuart — slow start, fast middle, slow end (dramatic jump feeling)
-        const ease = (t: number) =>
-          t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
-        // Disable CSS smooth-scroll so our RAF loop isn't fought by the browser
-        document.documentElement.style.scrollBehavior = "auto";
-        const tick = (now: number) => {
-          const t = Math.min(1, (now - startTime) / duration);
-          window.scrollTo(0, start + distance * ease(t));
-          if (t < 1) {
-            requestAnimationFrame(tick);
-          } else {
-            document.documentElement.style.scrollBehavior = "";
-          }
-        };
+  const handleDiscover = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const start = window.scrollY;
+    const end = window.innerHeight;
+    const distance = end - start;
+    const duration = 800;
+    const startTime = performance.now();
+    const ease = (t: number) =>
+      t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+    document.documentElement.style.scrollBehavior = "auto";
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - startTime) / duration);
+      window.scrollTo(0, start + distance * ease(t));
+      if (t < 1) {
         requestAnimationFrame(tick);
-      };
-      discover.addEventListener("click", onClick);
-      return () => discover.removeEventListener("click", onClick);
-    }
-  }, []);
+      } else {
+        document.documentElement.style.scrollBehavior = "";
+      }
+    };
+    requestAnimationFrame(tick);
+  };
 
   useEffect(() => {
     const video = document.getElementById("bgVideo") as HTMLVideoElement;
@@ -67,21 +57,26 @@ export default function HeroSection() {
 
   return (
     <section className="relative w-full">
-      {/* Discover button — z-30 so it's above the Himalaya section (z-20) and clickable */}
-      <a
-        id="discover-btn"
-        href="#the-craft"
-        className="pointer-events-auto absolute tx-serif-light text-[10pt] uppercase tracking-[0.25em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 left-1/2 -translate-x-1/2 md:left-[calc((100vw-clamp(1152px,75vw,1800px))/2+clamp(64px,5.5vw,120px))] md:translate-x-0 z-[30] top-[calc(50svh-82px)] md:top-[calc(100svh-140px)] border border-brand-gold md:border-0"
-        style={{
-          padding: "12px 22px",
-          background: "rgba(0,0,0,0.78)",
-          borderRadius: 999,
-          backdropFilter: "blur(6px)",
-          boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
-        }}
-      >
-        Discover &gt;&gt;
-      </a>
+      {/* Discover button + taglines — z-30 so it's above the Himalaya section (z-20) and clickable */}
+      <div className="absolute flex flex-col gap-1.5 left-1/2 -translate-x-1/2 md:left-16 lg:left-20 md:translate-x-0 z-[30] top-[calc(50svh-122px)] md:top-[calc(100svh-182px)]">
+        <p className="tx-body text-[16px] tracking-[0.06em] text-white leading-snug">Po:ro Apong: Solid-state fermented drink</p>
+        <p className="tx-body text-[16px] tracking-[0.06em] text-white leading-snug mb-2">A tradition kept alive by Mising women.</p>
+        <a
+          id="discover-btn"
+          href="#the-craft"
+          onClick={handleDiscover}
+          className="self-start pointer-events-auto tx-serif-light text-[10px] uppercase tracking-[0.1em] text-brand-gold whitespace-nowrap hover:text-brand-goldlight transition-colors duration-300 cursor-pointer animate-glow inline-flex items-center justify-center gap-2 border border-brand-gold md:border-0"
+          style={{
+            padding: "15px 19px",
+            background: "rgba(0,0,0,0.78)",
+            borderRadius: 5,
+            backdropFilter: "blur(6px)",
+            boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
+          }}
+        >
+          Discover &gt;&gt;
+        </a>
+      </div>
 
       {/* Video — sticky so Himalaya section slides up over it on scroll */}
       <div className="sticky top-0 z-10 w-full bg-black">

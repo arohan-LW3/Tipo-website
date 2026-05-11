@@ -106,7 +106,7 @@ export default function MobileHero() {
           color: "var(--color-brand-gold)",
           background: "rgba(0,0,0,0.78)",
           border: "1px solid rgba(212,146,42,0.15)",
-          borderRadius: 999,
+          borderRadius: 5,
           backdropFilter: "blur(6px)",
           WebkitBackdropFilter: "blur(6px)",
           boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
