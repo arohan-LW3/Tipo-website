@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 export default function MobileHero() {
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const ctaRef = useRef<HTMLAnchorElement | null>(null);
+  const ctaRef = useRef<HTMLDivElement | null>(null);
   const lockedRef = useRef(true);
 
   // Video autoplay
@@ -46,7 +46,7 @@ export default function MobileHero() {
       }
       if (ctaRef.current) {
         ctaRef.current.style.opacity = `${Math.max(0, 1 - p * 1.4)}`;
-        ctaRef.current.style.transform = `translateX(-50%) translateY(${p * -30}px)`;
+        ctaRef.current.style.transform = `translateY(${p * -30}px)`;
       }
     };
 
@@ -88,34 +88,66 @@ export default function MobileHero() {
         <div className="absolute inset-0 bg-black/15 pointer-events-none" />
       </div>
 
-      <a
+      <div
         ref={ctaRef}
-        href="#mobile-the-craft"
-        onClick={handleDiscover}
-        className="animate-glow absolute left-1/2 bottom-[48px] z-20 inline-flex items-center justify-center gap-3 no-underline"
-        style={{
-          transform: "translateX(-50%)",
-          minHeight: 43,
-          minWidth: 144,
-          padding: "11px 21px",
-          fontFamily: '"Mainlux", sans-serif',
-          fontWeight: 300,
-          fontSize: "8.5pt",
-          letterSpacing: "0.25em",
-          textTransform: "uppercase",
-          color: "var(--color-brand-gold)",
-          background: "rgba(0,0,0,0.78)",
-          border: "1px solid rgba(212,146,42,0.15)",
-          borderRadius: 5,
-          backdropFilter: "blur(6px)",
-          WebkitBackdropFilter: "blur(6px)",
-          boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
-          willChange: "transform, opacity",
-        }}
+        className="absolute left-6 bottom-[48px] z-20 flex flex-col items-start"
+        style={{ willChange: "transform, opacity" }}
       >
-        <span>Discover</span>
-        <span aria-hidden="true" style={{ letterSpacing: 0 }}>»</span>
-      </a>
+        <p style={{
+          fontFamily: '"Mainlux", "Inter", sans-serif',
+          fontWeight: 900,
+          fontSize: 18,
+          letterSpacing: "0.02em",
+          color: "var(--color-brand-gold)",
+          textTransform: "uppercase",
+          margin: 0,
+          marginBottom: 4,
+          lineHeight: 1.15,
+        }}>Po:ro Apong</p>
+        <p style={{
+          fontFamily: '"Mainlux", "Inter", sans-serif',
+          fontWeight: 300,
+          fontSize: 18,
+          color: "white",
+          margin: 0,
+          marginBottom: 4,
+          lineHeight: 1.15,
+        }}>Solid-state fermented drink</p>
+        <p style={{
+          fontFamily: '"Mainlux", "Inter", sans-serif',
+          fontWeight: 300,
+          fontSize: 18,
+          color: "white",
+          margin: 0,
+          marginBottom: 12,
+          lineHeight: 1.15,
+        }}>A tradition kept alive by Mising women.</p>
+        <a
+          href="#mobile-the-craft"
+          onClick={handleDiscover}
+          className="animate-glow inline-flex items-center justify-center gap-3 no-underline"
+          style={{
+            minHeight: 43,
+            minWidth: 144,
+            padding: "11px 21px",
+            fontFamily: '"Mainlux", sans-serif',
+            fontWeight: 300,
+            fontSize: "8.5pt",
+            letterSpacing: "0.25em",
+            textTransform: "uppercase",
+            color: "var(--color-brand-gold)",
+            background: "rgba(0,0,0,0.78)",
+            border: "1px solid rgba(212,146,42,0.15)",
+            borderRadius: 10,
+            backdropFilter: "blur(6px)",
+            WebkitBackdropFilter: "blur(6px)",
+            boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
+          }}
+        >
+          <span>Discover</span>
+          <span aria-hidden="true" style={{ letterSpacing: 0 }}>»</span>
+        </a>
+      </div>
     </section>
   );
 }

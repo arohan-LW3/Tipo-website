@@ -56,7 +56,7 @@ export default function MobileFooter() {
           />
           <p className="tx-serif-light text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Po:Ro Apong</p>
           <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Handcrafted by Women</p>
-          <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Traditional Indian Rice Wine</p>
+          <p className="tx-body text-[13px] leading-[1.6] text-[#C8C8C8] m-0">Heritage Alcoholic Beverage</p>
         </div>
 
         {/* Accordion */}

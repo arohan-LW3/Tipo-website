@@ -49,7 +49,7 @@ export default function Footer() {
             Po:Ro Apong
           </p>
           <p className={bodyLine}>Handcrafted by Women</p>
-          <p className={bodyLine}>Traditional Indian Rice Wine</p>
+          <p className={bodyLine}>Heritage Alcoholic Beverage</p>
         </div>
 
         {columns.map(({ title, links }) => (

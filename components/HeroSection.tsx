@@ -58,9 +58,10 @@ export default function HeroSection() {
   return (
     <section className="relative w-full">
       {/* Discover button + taglines — z-30 so it's above the Himalaya section (z-20) and clickable */}
-      <div className="absolute flex flex-col gap-1.5 left-1/2 -translate-x-1/2 md:left-16 lg:left-20 md:translate-x-0 z-[30] top-[calc(50svh-122px)] md:top-[calc(100svh-182px)]">
-        <p className="tx-body text-[16px] tracking-[0.06em] text-white leading-snug">Po:ro Apong: Solid-state fermented drink</p>
-        <p className="tx-body text-[16px] tracking-[0.06em] text-white leading-snug mb-2">A tradition kept alive by Mising women.</p>
+      <div className="absolute flex flex-col gap-1.5 left-1/2 -translate-x-1/2 md:left-16 lg:left-20 md:translate-x-0 z-[30] top-[calc(50svh-122px)] md:top-[calc(100svh-242px)]">
+        <p className="tx-heading text-brand-gold text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15]">Po:ro Apong</p>
+        <p className="tx-serif-light text-white text-[18px] md:text-[clamp(22px,1.67vw,36px)] leading-[1.15]">Solid-state fermented drink</p>
+        <p className="tx-serif-light text-white text-[18px] md:text-[clamp(22px,1.67vw,36px)] leading-[1.15] mb-2">A tradition kept alive by Mising women.</p>
         <a
           id="discover-btn"
           href="#the-craft"
@@ -69,7 +70,7 @@ export default function HeroSection() {
           style={{
             padding: "15px 19px",
             background: "rgba(0,0,0,0.78)",
-            borderRadius: 5,
+            borderRadius: 10,
             backdropFilter: "blur(6px)",
             boxShadow: "0 8px 30px rgba(212,146,42,0.25), inset 0 0 0 1px rgba(212,146,42,0.15)",
           }}
