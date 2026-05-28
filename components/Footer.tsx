@@ -60,7 +60,7 @@ export default function Footer() {
               (title === "Connect" ? " col-span-2 md:col-span-1" : "")
             }
           >
-            <h4 className="tx-eyebrow uppercase text-[clamp(14px,0.97vw,20px)] mb-3 text-[#D4922A]">
+            <h4 className="tx-eyebrow uppercase text-[clamp(14px,0.97vw,20px)] mb-3 text-[#F4AA25]">
               {title}
             </h4>
             <ul

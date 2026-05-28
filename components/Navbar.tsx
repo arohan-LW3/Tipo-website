@@ -86,7 +86,7 @@ export default function Navbar() {
                   link.label === "The Team" ? (e) => { e.preventDefault(); scrollToSection("heritage"); } :
                   (e) => { e.preventDefault(); scrollToSection("contact"); }
                 }
-                className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
+                className="tx-serif-light text-[11px] uppercase tracking-[0.14em] text-[#F4AA25] transition-all duration-300 border-b border-transparent hover:border-brand-gold pb-0.5"
               >
                 {link.label}
               </a>
@@ -130,7 +130,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => { if (link.label === "The Craft") scrollToParallax(e); setMenuOpen(false); }}
-                className="tx-serif-light text-[12px] uppercase tracking-[0.14em] text-[#D4922A] transition-all duration-300"
+                className="tx-serif-light text-[12px] uppercase tracking-[0.14em] text-[#F4AA25] transition-all duration-300"
               >
                 {link.label}
               </a>

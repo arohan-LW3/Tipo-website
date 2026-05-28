@@ -17,7 +17,7 @@ export default function CommunitySection() {
 
         {/* Right — Text (shown first on mobile) */}
         <div data-parallax-text className="flex flex-col gap-2 md:gap-6 order-2 md:order-2 w-full md:max-w-[clamp(480px,33.3vw,680px)] md:self-center md:-mt-8">
-          <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#D4922A]">
+          <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F4AA25]">
             <span className="tx-eyebrow block">Value lives</span>
             <span className="tx-tracked-light block">in the system</span>
           </h2>

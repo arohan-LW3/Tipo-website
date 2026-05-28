@@ -59,9 +59,9 @@ export default function HeroSection() {
     <section className="relative w-full">
       {/* Discover button + taglines — z-30 so it's above the Himalaya section (z-20) and clickable */}
       <div className="absolute flex flex-col gap-1.5 left-1/2 -translate-x-1/2 md:left-16 lg:left-20 md:translate-x-0 z-[30] top-[calc(50svh-122px)] md:top-[calc(100svh-242px)]">
-        <p className="tx-heading text-[#D4922A] text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15]">Po:ro Apong</p>
-        <p className="tx-serif-light text-[#D4922A] text-[14px] leading-[1.15]">Solid-state fermented drink</p>
-        <p className="tx-serif-light text-[#D4922A] text-[14px] leading-[1.15] mb-2">A tradition kept alive by Mising women.</p>
+        <p className="tx-heading text-[#F4AA25] text-[18px] md:text-[clamp(22px,1.67vw,36px)] uppercase leading-[1.15]">Po:ro Apong</p>
+        <p className="tx-serif-light text-[#F4AA25] text-[14px] leading-[1.15]">Solid-state fermented drink</p>
+        <p className="tx-serif-light text-[#F4AA25] text-[14px] leading-[1.15] mb-2">A tradition kept alive by Mising women.</p>
         <a
           id="discover-btn"
           href="#the-craft"
@@ -144,7 +144,7 @@ export default function HeroSection() {
           <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
           <div className="max-w-[clamp(420px,29.2vw,600px)] text-left">
             {/* THE CRAFT label */}
-            <span className="animate-glow-drl tx-eyebrow inline-block text-[11px] uppercase tracking-[0.3em] text-brand-gold border-b border-[#D4922A] pb-0.5 mb-3 md:mb-[45px]">
+            <span className="animate-glow-drl tx-eyebrow inline-block text-[11px] uppercase tracking-[0.3em] text-brand-gold border-b border-[#F4AA25] pb-0.5 mb-3 md:mb-[45px]">
               The Craft
             </span>
 
