@@ -62,7 +62,7 @@ export default function MobileNavbar() {
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="tx-serif-light text-[12px] uppercase tracking-[0.14em] text-[#F4AA25] no-underline"
+                className="tx-serif-light text-[12px] uppercase tracking-[0.14em] text-[#F0B537] no-underline"
               >
                 {l.label}
               </a>

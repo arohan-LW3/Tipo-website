@@ -6,7 +6,7 @@ export default function MapSection() {
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
         {/* Welcome heading + culture quote */}
         <div data-parallax-text className="max-w-[clamp(600px,41.7vw,900px)] mx-auto text-center flex flex-col gap-4 md:py-20">
-          <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F4AA25]">
+          <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F0B537]">
             <span className="tx-eyebrow block">Welcome</span>
             <span className="tx-tracked-light block">TiPo&apos;s Po:Ro Apong</span>
             <span className="tx-tracked-light block">to your world</span>
@@ -91,7 +91,7 @@ export default function MapSection() {
             }}
           />
           <div className="text-center mt-[45px]">
-            <h2 className="tx-eyebrow text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug mb-[13px] text-[#F4AA25]">
+            <h2 className="tx-eyebrow text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug mb-[13px] text-[#F0B537]">
               Contact &amp; Distribution
             </h2>
             <p className="tx-body-medium text-[clamp(14px,0.97vw,20px)] leading-[1.4] md:leading-[1.8] text-[#C8C8C8]">

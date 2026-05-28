@@ -16,7 +16,7 @@ interface ProcessRow {
   boldLabel?: boolean;
   /** If true, both label and heading are Mainlux Bold. */
   boldBoth?: boolean;
-  /** Overrides the color of the heading span only (label keeps #F4AA25). */
+  /** Overrides the color of the heading span only (label keeps #F0B537). */
   headingColor?: string;
   /** Optional pull-quote block rendered after the body; each string is its own line. */
   pullQuote?: string[];
@@ -149,7 +149,7 @@ export default function ProcessSection() {
   }`}
             >
               <h2
-                className={`text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F4AA25] ${
+                className={`text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F0B537] ${
                   row.stacked ? "" : "whitespace-nowrap"
                 }`}
               >
@@ -176,7 +176,7 @@ export default function ProcessSection() {
               </h2>
               {row.highlight && (
                 <p
-                  className={`tx-serif-light leading-[1.4] text-[#F4AA25] ${
+                  className={`tx-serif-light leading-[1.4] text-[#F0B537] ${
                     row.largeText ? "md:text-[clamp(16px,1.11vw,22px)]" : "text-[14px]"
                   }`}
                 >

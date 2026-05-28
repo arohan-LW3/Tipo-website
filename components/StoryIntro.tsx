@@ -22,10 +22,10 @@ export default function StoryIntro() {
           {/* Right — Text */}
           <div data-parallax-text className="flex flex-col gap-2 md:gap-6">
             <div className="flex flex-col gap-1 mt-5">
-              <span className="tx-serif-bold text-[20px] uppercase tracking-[0.25em] text-[#F4AA25]">
+              <span className="tx-serif-bold text-[20px] uppercase tracking-[0.25em] text-[#F0B537]">
                 The Forest
               </span>
-              <h2 className="tx-serif-light text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F4AA25]">
+              <h2 className="tx-serif-light text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F0B537]">
                 &amp; the Herb collectors
               </h2>
             </div>

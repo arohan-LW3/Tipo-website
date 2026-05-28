@@ -6,7 +6,7 @@ export default function HeritageSection() {
       <div className="max-w-[clamp(1152px,75vw,1800px)] mx-auto px-10 md:px-[clamp(64px,5.5vw,120px)]">
         {/* Eyebrow label */}
         <div className="mb-8">
-          <span className="animate-glow-drl tx-serif-bold text-[clamp(14px,0.97vw,20px)] uppercase tracking-[0.25em] text-[#F4AA25] inline-block border-b border-[#F4AA25] pb-0.5">
+          <span className="animate-glow-drl tx-serif-bold text-[clamp(14px,0.97vw,20px)] uppercase tracking-[0.25em] text-[#F0B537] inline-block border-b border-[#F0B537] pb-0.5">
             The Team
           </span>
         </div>
@@ -15,7 +15,7 @@ export default function HeritageSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-[clamp(40px,3vw,80px)] gap-y-12 items-start md:items-center">
           {/* Left — Text */}
           <div data-parallax-text className="flex flex-col gap-4 md:gap-6 w-full md:max-w-[clamp(480px,33.3vw,680px)] order-2 md:order-1">
-            <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F4AA25]">
+            <h2 className="text-[20px] md:text-[clamp(24px,1.67vw,38px)] leading-snug text-[#F0B537]">
               <span className="tx-eyebrow block">It takes a village,</span>
               <span className="tx-tracked-light block">they say!</span>
             </h2>
